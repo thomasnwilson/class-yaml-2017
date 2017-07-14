@@ -49,7 +49,7 @@ ds %>%
 
 
 # ---- list-static -------------------------------------------------------------
-display_attribute <- function( a, name, prefix=glue("**{name}**: ")) {
+display_attribute <- function( a, name, prefix=glue("* **{name}**: ")) {
   # browser()
   if( !is.null(a[[name]]) ) {
     glue("{prefix}{value}\n", value=a[[name]])
@@ -60,14 +60,14 @@ display_attribute <- function( a, name, prefix=glue("**{name}**: ")) {
 display_measure <- function( x ) {
   x %>%
     glue_data(
-      "{.$title}\n------------------------",
-      {.$description},
-      "\n**measure** #{.$measure_id}; **pd**: {.$driver_primary}",
+      "### {.$title}",
+      "{.$description}\n",
+      "* **measure** #{.$measure_id}; **pd**: {.$driver_primary}",
       {display_attribute(., "numerator")},
       {display_attribute(., "denominator")},
       {display_attribute(., "note")},
       "\n\n",
-      .sep = "\n\n"
+      .sep = "\n"
     )
 
 }
