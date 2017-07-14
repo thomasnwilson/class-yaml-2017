@@ -45,15 +45,16 @@ ds %>%
 # ---- list-static -------------------------------------------------------------
 display_measure <- function( x ) {
   # browser()
-  paste0(
-    "\nMeasure #", x$measure_id, " (PD: ", x$driver_primary,")\n",
-    "-----------------\n\n",
-    x$description, "\n\n",
-    "**numerator**: ", x$numerator, "\n\n",
-    "**denominator**: ", x$denominator, "\n\n",
-    dplyr::if_else(!is.null(x$note), paste0("**note**:", x$note), "\n\n", ""),
-    "\n\n"
-  )
+  x %>%
+    glue::glue_data(
+      "\nMeasure #{.$measure_id} (PD: {.$driver_primary})\n",
+      "-----------------\n\n",
+      "{.$description}\n\n",
+      {dplyr::if_else(!is.null(.$numerator), paste0("**numerator**: ", .$numerator, "\n\n"), "")},
+      {dplyr::if_else(!is.null(.$denominator), paste0("**denominator**: ", .$denominator, "\n\n"), "")},
+      {dplyr::if_else(!is.null(.$note), paste0("**note**:", .$note, "\n\n"), "")},
+      "\n\n"
+    )
 
 }
 

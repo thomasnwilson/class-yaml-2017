@@ -42,7 +42,6 @@ Warning: replacing previous import 'scales::viridis_pal' by 'viridis::viridis_pa
 # Display
 
 ## Static list
-
 Measure #1 (PD: SMART Aim)
 -----------------
 
@@ -51,10 +50,6 @@ Measure #1 (PD: SMART Aim)
 **numerator**: N of enrolled families that received all of the expected home visits this month
 
 **denominator**: N enrolled families not on creative outreach, alternate visit schedule or level X
-
-
-
-
 
 
 Measure #2 (PD: 3)
@@ -67,10 +62,6 @@ Measure #2 (PD: 3)
 **denominator**: Expected service capacity
 
 
-
-
-
-
 Measure #3 (PD: 3)
 -----------------
 
@@ -79,10 +70,6 @@ Measure #3 (PD: 3)
 **numerator**: N of families enrolled this month
 
 **denominator**: Available service capacity at beginning of month
-
-
-
-
 
 
 Measure #4 (PD: 3)
@@ -95,10 +82,6 @@ Ratio of suitable referrals to available service capacity
 **denominator**: available service capacity
 
 
-
-
-
-
 Measure #5 (PD: 3)
 -----------------
 
@@ -107,10 +90,6 @@ Measure #5 (PD: 3)
 **numerator**: N of families referred this month that were contacted
 
 **denominator**: N of families referred this month that attempted to contact
-
-
-
-
 
 
 Measure #6 (PD: 3)
@@ -123,10 +102,6 @@ Measure #6 (PD: 3)
 **denominator**: N of families referred this month that were contacted
 
 
-
-
-
-
 Measure #7a (PD: 3)
 -----------------
 
@@ -135,10 +110,6 @@ Measure #7a (PD: 3)
 **numerator**: N of families contacted that received any contact within 48 hours
 
 **denominator**: N of families referred this month that were contacted
-
-
-
-
 
 
 Measure #7b (PD: 3)
@@ -151,10 +122,6 @@ Measure #7b (PD: 3)
 **denominator**: N of families referred this month that were contacted
 
 
-
-
-
-
 Measure #8 (PD: 3)
 -----------------
 
@@ -163,10 +130,6 @@ Average N of days from referral to 1st face-to-face contact
 **numerator**: N of families referred this month that were contacted and offered home visiting services
 
 **denominator**: N of families referred this month that were contacted
-
-
-
-
 
 
 Measure #10 (PD: 3)
@@ -179,18 +142,10 @@ Measure #10 (PD: 3)
 **denominator**: N of families referred this month with a completed referral
 
 
-
-
-
-
 Measure #11 (PD: 3)
 -----------------
 
 Among families enrolled, Average N of days between receipt of referral and enrollment
-
-**numerator**: 
-
-**denominator**: 
 
 **note**:Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ...
 
@@ -205,10 +160,6 @@ Measure #12 (PD: 4)
 **denominator**: N of families for whom weekly or biweekly visits are expected
 
 
-
-
-
-
 Measure #13 (PD: 4)
 -----------------
 
@@ -217,10 +168,6 @@ Measure #13 (PD: 4)
 **numerator**: N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
 
 **denominator**: N of enrolled families
-
-
-
-
 
 
 Measure #14a (PD: 5)
@@ -233,10 +180,6 @@ Measure #14a (PD: 5)
 **denominator**: N of families whose 1st HV was 3 to 6 months ago
 
 
-
-
-
-
 Measure #14b (PD: 5)
 -----------------
 
@@ -247,10 +190,6 @@ Measure #14b (PD: 5)
 **denominator**: N of families whose 1st HV was 6 to 12 months ago
 
 
-
-
-
-
 Measure #14c (PD: 5)
 -----------------
 
@@ -261,10 +200,6 @@ Measure #14c (PD: 5)
 **denominator**: N of families whose 1st HV was 12 to 18 months ago
 
 
-
-
-
-
 Measure #14c (PD: 5)
 -----------------
 
@@ -273,10 +208,6 @@ Measure #14c (PD: 5)
 **numerator**: N of families whose 1st HV was 12+ months of visits
 
 **denominator**: N of families whose 1st HV was 12 to 18 months ago
-
-
-
-
 
 
 Measure #17 (PD: 5)
@@ -600,5 +531,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-14, 09:13 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-14, 09:31 -0500 in 2 seconds.
 
