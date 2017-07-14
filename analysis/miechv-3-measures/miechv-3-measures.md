@@ -43,33 +43,160 @@ Warning: replacing previous import 'scales::viridis_pal' by 'viridis::viridis_pa
 
 ## Static Table
 
-level 1   level 2    measure id  description                                                              driver primary   numerator                                                                         denominator                                                                       
---------  --------  -----------  -----------------------------------------------------------------------  ---------------  --------------------------------------------------------------------------------  ----------------------------------------------------------------------------------
-Root      1                   1  % of families that received all of the expected home visits this month   SMART Aim        N of enrolled families that received all of the expected home visits this month   N enrolled families not on creative outreach, alternate visit schedule or level X 
-Root      2                   2  % total capacity served                                                  3                Current caseload                                                                  Expected service capacity                                                         
+level 1   level 2   measure id   description                                                                             driver primary   numerator                                                                                                                                                                                              denominator                                                                       
+--------  --------  -----------  --------------------------------------------------------------------------------------  ---------------  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------
+Root      1         1            % of families that received all of the expected home visits this month                  SMART Aim        N of enrolled families that received all of the expected home visits this month                                                                                                                        N enrolled families not on creative outreach, alternate visit schedule or level X 
+Root      2         2            % total capacity served                                                                 3                Current caseload                                                                                                                                                                                       Expected service capacity                                                         
+Root      3         3            % of available capacity that was filled this month                                      3                N of families enrolled this month                                                                                                                                                                      Available service capacity at beginning of month                                  
+Root      4         4            Ratio of suitable referrals to available service capacity                               3                N of referrals received this month                                                                                                                                                                     available service capacity                                                        
+Root      5         5            % of families contacted, among those attempted to contact                               3                N of families referred this month that were contacted                                                                                                                                                  N of families referred this month that attempted to contact                       
+Root      6         6            % of referrals that were appropriate                                                    3                N of referrals this month that were appropriate                                                                                                                                                        N of families referred this month that were contacted                             
+Root      7         7a           % of referred families contacted who received any contact within 48 hours               3                N of families contacted that received any contact within 48 hours                                                                                                                                      N of families referred this month that were contacted                             
+Root      8         7b           % of referred families contacted who received a face-to-face contact                    3                N of families contacted that received a first face-to-face contact                                                                                                                                     N of families referred this month that were contacted                             
+Root      9         8            Average N of days from referral to 1st face-to-face contact                             3                N of families referred this month that were contacted and offered home visiting services                                                                                                               N of families referred this month that were contacted                             
+Root      10        10           % of families offered home visiting services that enrolled in home visiting services    3                N of families referred this month that were offered home visiting services that enrolled in home visiting services                                                                                     N of families referred this month with a completed referral                       
+Root      11        11           Among families enrolled, Average N of days between receipt of referral and enrollment   3                NA                                                                                                                                                                                                     NA                                                                                
+Root      12        12           % of families without a 21+ day drought between visits                                  4                Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits                                                                                                      N of families for whom weekly or biweekly visits are expected                     
+Root      13        13           % of families on alternate visit schedule                                               4                N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.   N of enrolled families                                                            
+Root      14        14a          % of families completing 3+ months                                                      5                N of families who completed 3+ months of visits                                                                                                                                                        N of families whose 1st HV was 3 to 6 months ago                                  
+Root      15        14b          % of families completing 6+ months                                                      5                N of families who completed 6+ months of visits                                                                                                                                                        N of families whose 1st HV was 6 to 12 months ago                                 
+Root      16        14c          % of families completing 12+ months                                                     5                N of families whose 1st HV was 12+ months of visits                                                                                                                                                    N of families whose 1st HV was 12 to 18 months ago                                
+Root      17        14c          % of families completing 12+ months                                                     5                N of families whose 1st HV was 12+ months of visits                                                                                                                                                    N of families whose 1st HV was 12 to 18 months ago                                
+Root      18        17           % of families that disenrolled from the program for 'addressable' reasons               5                N of families who disenrolled for ‘addressable’ reasons                                                                                                                                                N of families who disenrolled from the home visiting program                      
+Root      19        18           % of families ask about child development                                               ?                N of visits that provider asked if parent has concerns about the development of child.                                                                                                                 N of visits w/ child 0+ days old                                                  
 
 ## Static Tree
 
 ```
-  levelName
-1     Root 
-2      ¦--1
-3      °--2
+   levelName
+1     Root  
+2      ¦--1 
+3      ¦--2 
+4      ¦--3 
+5      ¦--4 
+6      ¦--5 
+7      ¦--6 
+8      ¦--7 
+9      ¦--8 
+10     ¦--9 
+11     ¦--10
+12     ¦--11
+13     ¦--12
+14     ¦--13
+15     ¦--14
+16     ¦--15
+17     ¦--16
+18     ¦--17
+19     ¦--18
+20     °--19
 ```
 
 ```
-  levelName measure_id                                                            description
-1     Root          NA                                                                       
-2      ¦--1          1 % of families that received all of the expected home visits this month
-3      °--2          2                                                % total capacity served
-  driver_primary                                                                       numerator
-1                                                                                               
-2      SMART Aim N of enrolled families that received all of the expected home visits this month
-3              3                                                                Current caseload
-                                                                        denominator
-1                                                                                  
-2 N enrolled families not on creative outreach, alternate visit schedule or level X
-3                                                         Expected service capacity
+   levelName measure_id
+1     Root             
+2      ¦--1           1
+3      ¦--2           2
+4      ¦--3           3
+5      ¦--4           4
+6      ¦--5           5
+7      ¦--6           6
+8      ¦--7          7a
+9      ¦--8          7b
+10     ¦--9           8
+11     ¦--10         10
+12     ¦--11         11
+13     ¦--12         12
+14     ¦--13         13
+15     ¦--14        14a
+16     ¦--15        14b
+17     ¦--16        14c
+18     ¦--17        14c
+19     ¦--18         17
+20     °--19         18
+                                                                             description
+1                                                                                       
+2                 % of families that received all of the expected home visits this month
+3                                                                % total capacity served
+4                                     % of available capacity that was filled this month
+5                              Ratio of suitable referrals to available service capacity
+6                              % of families contacted, among those attempted to contact
+7                                                   % of referrals that were appropriate
+8              % of referred families contacted who received any contact within 48 hours
+9                   % of referred families contacted who received a face-to-face contact
+10                           Average N of days from referral to 1st face-to-face contact
+11  % of families offered home visiting services that enrolled in home visiting services
+12 Among families enrolled, Average N of days between receipt of referral and enrollment
+13                                % of families without a 21+ day drought between visits
+14                                             % of families on alternate visit schedule
+15                                                    % of families completing 3+ months
+16                                                    % of families completing 6+ months
+17                                                   % of families completing 12+ months
+18                                                   % of families completing 12+ months
+19             % of families that disenrolled from the program for 'addressable' reasons
+20                                             % of families ask about child development
+   driver_primary
+1                
+2       SMART Aim
+3               3
+4               3
+5               3
+6               3
+7               3
+8               3
+9               3
+10              3
+11              3
+12              3
+13              4
+14              4
+15              5
+16              5
+17              5
+18              5
+19              5
+20              ?
+                                                                                                                                                                                              numerator
+1                                                                                                                                                                                                      
+2                                                                                                                       N of enrolled families that received all of the expected home visits this month
+3                                                                                                                                                                                      Current caseload
+4                                                                                                                                                                     N of families enrolled this month
+5                                                                                                                                                                    N of referrals received this month
+6                                                                                                                                                 N of families referred this month that were contacted
+7                                                                                                                                                       N of referrals this month that were appropriate
+8                                                                                                                                     N of families contacted that received any contact within 48 hours
+9                                                                                                                                    N of families contacted that received a first face-to-face contact
+10                                                                                                             N of families referred this month that were contacted and offered home visiting services
+11                                                                                   N of families referred this month that were offered home visiting services that enrolled in home visiting services
+12                                                                                                                                                                                                     
+13                                                                                                    Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits
+14 N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
+15                                                                                                                                                      N of families who completed 3+ months of visits
+16                                                                                                                                                      N of families who completed 6+ months of visits
+17                                                                                                                                                  N of families whose 1st HV was 12+ months of visits
+18                                                                                                                                                  N of families whose 1st HV was 12+ months of visits
+19                                                                                                                                              N of families who disenrolled for ‘addressable’ reasons
+20                                                                                                               N of visits that provider asked if parent has concerns about the development of child.
+                                                                         denominator
+1                                                                                   
+2  N enrolled families not on creative outreach, alternate visit schedule or level X
+3                                                          Expected service capacity
+4                                   Available service capacity at beginning of month
+5                                                         available service capacity
+6                        N of families referred this month that attempted to contact
+7                              N of families referred this month that were contacted
+8                              N of families referred this month that were contacted
+9                              N of families referred this month that were contacted
+10                             N of families referred this month that were contacted
+11                       N of families referred this month with a completed referral
+12                                                                                  
+13                     N of families for whom weekly or biweekly visits are expected
+14                                                            N of enrolled families
+15                                  N of families whose 1st HV was 3 to 6 months ago
+16                                 N of families whose 1st HV was 6 to 12 months ago
+17                                N of families whose 1st HV was 12 to 18 months ago
+18                                N of families whose 1st HV was 12 to 18 months ago
+19                      N of families who disenrolled from the home visiting program
+20                                                  N of visits w/ child 0+ days old
 ```
 
 ## Dynamic Tree
@@ -169,5 +296,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-14, 07:21 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-14, 08:01 -0500 in 2 seconds.
 
