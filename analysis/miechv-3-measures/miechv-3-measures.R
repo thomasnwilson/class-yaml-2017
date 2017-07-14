@@ -19,7 +19,12 @@ requireNamespace("OuhscMunge"                 )   # devtools::install_github("Ou
 
 # ---- declare-globals ---------------------------------------------------------
 path_input     <- "./data-public/raw/miechv-3-outcome-measure.yml"
-variables      <- c("measure_id", "description", "driver_primary", "numerator", "denominator", "definition", "note")
+variables      <- c(
+  "measure_id", "title", "description",
+  "driver_primary",
+  "numerator", "denominator", "definition",
+  "note"
+)
 
 # ---- load-data ---------------------------------------------------------------
 l <- yaml::yaml.load_file(path_input)
@@ -32,7 +37,7 @@ ds <- data.tree:::ToDataFrameTypeCol(dt, variables)
 
 # ---- tree-static --------------------------------------------------------------
 data.tree:::print.Node(dt, limit=NULL)
-print(dt, "measure_id", "description", "driver_primary", "numerator", "denominator", "definition", "note", pruneMethod = "simple")
+print(dt, "measure_id", "title", "description", "driver_primary", "numerator", "denominator", "definition", "note", pruneMethod = "simple")
 
 # print(dt)
 
@@ -55,8 +60,9 @@ display_attribute <- function( a, name, prefix=glue("**{name}**: ")) {
 display_measure <- function( x ) {
   x %>%
     glue_data(
-      "\nMeasure #{.$measure_id} (PD: {.$driver_primary})\n------------------------",
+      "{.$title}\n------------------------",
       {.$description},
+      "\n**measure** #{.$measure_id}; **pd**: {.$driver_primary}",
       {display_attribute(., "numerator")},
       {display_attribute(., "denominator")},
       {display_attribute(., "note")},

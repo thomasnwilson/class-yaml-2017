@@ -1,107 +1,125 @@
 -
   measure_id: 1
+  title: visits_all
   description: "% of families that received all of the expected home visits this month"
   driver_primary: SMART Aim
   numerator: N of enrolled families that received all of the expected home visits this month
   denominator: N enrolled families not on creative outreach, alternate visit schedule or level X
 -
   measure_id: 2
+  title: capacity_served
   description: "% total capacity served"
   driver_primary: 3
   numerator: Current caseload
   denominator: Expected service capacity
 -
   measure_id: 3
+  title: capacity_filled
   description: "% of available capacity that was filled this month"
   driver_primary: 3
   numerator: N of families enrolled this month
   denominator: Available service capacity at beginning of month
 -
   measure_id: 4
+  title: referral_suitability
   description: "Ratio of suitable referrals to available service capacity"
   driver_primary: 3
   numerator: N of referrals received this month
   denominator: available service capacity
 -
   measure_id: 5
+  title: referral_contacted
   description: "% of families contacted, among those attempted to contact"
   driver_primary: 3
   numerator: N of families referred this month that were contacted
   denominator: N of families referred this month that attempted to contact
 -
   measure_id: 6
+  title: referral_appropriateness
   description: "% of referrals that were appropriate"
   driver_primary: 3
   numerator: N of referrals this month that were appropriate
   denominator: N of families referred this month that were contacted
 -
   measure_id: 7a
+  title: contact_any
   description: "% of referred families contacted who received any contact within 48 hours"
   driver_primary: 3
   numerator: N of families contacted that received any contact within 48 hours
   denominator: N of families referred this month that were contacted
 -
   measure_id: 7b
+  title: contact_face
   description: "% of referred families contacted who received a face-to-face contact"
   driver_primary: 3
   numerator: N of families contacted that received a first face-to-face contact
   denominator: N of families referred this month that were contacted
 -
   measure_id: 8
+  title: contact_lag
   description: "Average N of days from referral to 1st face-to-face contact"
   driver_primary: 3
   numerator: N of families referred this month that were contacted and offered home visiting services
   denominator: N of families referred this month that were contacted
 -
   measure_id: 10
+  title: enrolled
   description: "% of families offered home visiting services that enrolled in home visiting services"
   driver_primary: 3
   numerator: N of families referred this month that were offered home visiting services that enrolled in home visiting services
   denominator: N of families referred this month with a completed referral
 -
   measure_id: 11
+  title: enroll_lag
   description: "Among families enrolled, Average N of days between receipt of referral and enrollment"
   driver_primary: 3
   definition: Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …
   note: "Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ..."
 -
   measure_id: 12
+  title: visit_drought
   description: "% of families without a 21+ day drought between visits"
   driver_primary: 4
   numerator: Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits
   denominator: N of families for whom weekly or biweekly visits are expected
 -
   measure_id: 13
+  title: visit_schedule_alternate
   description: "% of families on alternate visit schedule"
   driver_primary: 4
   numerator: N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
   denominator: N of enrolled families
 -
   measure_id: 14a
+  title: retention_month_03
   description: "% of families completing 3+ months"
   driver_primary: 5
   numerator: N of families who completed 3+ months of visits
   denominator: N of families whose 1st HV was 3 to 6 months ago
 -
   measure_id: 14b
+  title: retention_month_06
   description: "% of families completing 6+ months"
   driver_primary: 5
   numerator: N of families who completed 6+ months of visits
   denominator: N of families whose 1st HV was 6 to 12 months ago
 -
   measure_id: 14c
+  title: retention_month_12
   description: "% of families completing 12+ months"
   driver_primary: 5
   numerator: N of families whose 1st HV was 12+ months of visits
   denominator: N of families whose 1st HV was 12 to 18 months ago
 -
-  measure_id: 14c
-  description: "% of families completing 12+ months"
+  measure_id: 14d
+  title: retention_month_18
+  description: "% of families completing 18+ months"
   driver_primary: 5
-  numerator: N of families whose 1st HV was 12+ months of visits
-  denominator: N of families whose 1st HV was 12 to 18 months ago
+  numerator: N of families whose 1st HV was 18+ months of visits
+  denominator: N of families whose 1st HV was 18 to 24 months ago
 -
   measure_id: 17
+  title: disenrolled_addressable
   description: "% of families that disenrolled from the program for 'addressable' reasons"
   driver_primary: 5
   numerator: N of families who disenrolled for ‘addressable’ reasons
@@ -109,6 +127,7 @@
   note: Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
 -
   measure_id: 18
+  title: inquire_development
   driver_primary: "?"
   description: "% of families ask about child development"
   numerator: N of visits that provider asked if parent has concerns about the development of child.
