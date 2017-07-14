@@ -1,0 +1,10 @@
+-
+  measure_id: 1
+  description: "% of families that received all of the expected home visits this month"
+  numerator: N of enrolled families that received all of the expected home visits this month
+  denominator: N enrolled families not on creative outreach, alternate visit schedule or level X
+-
+  measure_id: 2s
+  description: "% total capacity served"
+  numerator:  Current caseload
+  denominator:  Expected service capacity
