@@ -106,7 +106,7 @@
   driver_primary: 5
   numerator: N of families who disenrolled for ‘addressable’ reasons
   denominator: N of families who disenrolled from the home visiting program
-  note: Help us define “addressable” along the lines of  ‘legitimate’ or ‘valid’ or ‘justified’
+  note: Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
 -
   measure_id: 18
   driver_primary: "?"

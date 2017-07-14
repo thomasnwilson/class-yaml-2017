@@ -43,7 +43,7 @@ Warning: replacing previous import 'scales::viridis_pal' by 'viridis::viridis_pa
 
 ## Static list
 Measure #1 (PD: SMART Aim)
------------------
+------------------------
 
 % of families that received all of the expected home visits this month
 
@@ -52,8 +52,10 @@ Measure #1 (PD: SMART Aim)
 **denominator**: N enrolled families not on creative outreach, alternate visit schedule or level X
 
 
+
+
 Measure #2 (PD: 3)
------------------
+------------------------
 
 % total capacity served
 
@@ -62,8 +64,10 @@ Measure #2 (PD: 3)
 **denominator**: Expected service capacity
 
 
+
+
 Measure #3 (PD: 3)
------------------
+------------------------
 
 % of available capacity that was filled this month
 
@@ -72,8 +76,10 @@ Measure #3 (PD: 3)
 **denominator**: Available service capacity at beginning of month
 
 
+
+
 Measure #4 (PD: 3)
------------------
+------------------------
 
 Ratio of suitable referrals to available service capacity
 
@@ -82,8 +88,10 @@ Ratio of suitable referrals to available service capacity
 **denominator**: available service capacity
 
 
+
+
 Measure #5 (PD: 3)
------------------
+------------------------
 
 % of families contacted, among those attempted to contact
 
@@ -92,8 +100,10 @@ Measure #5 (PD: 3)
 **denominator**: N of families referred this month that attempted to contact
 
 
+
+
 Measure #6 (PD: 3)
------------------
+------------------------
 
 % of referrals that were appropriate
 
@@ -102,8 +112,10 @@ Measure #6 (PD: 3)
 **denominator**: N of families referred this month that were contacted
 
 
+
+
 Measure #7a (PD: 3)
------------------
+------------------------
 
 % of referred families contacted who received any contact within 48 hours
 
@@ -112,8 +124,10 @@ Measure #7a (PD: 3)
 **denominator**: N of families referred this month that were contacted
 
 
+
+
 Measure #7b (PD: 3)
------------------
+------------------------
 
 % of referred families contacted who received a face-to-face contact
 
@@ -122,8 +136,10 @@ Measure #7b (PD: 3)
 **denominator**: N of families referred this month that were contacted
 
 
+
+
 Measure #8 (PD: 3)
------------------
+------------------------
 
 Average N of days from referral to 1st face-to-face contact
 
@@ -132,8 +148,10 @@ Average N of days from referral to 1st face-to-face contact
 **denominator**: N of families referred this month that were contacted
 
 
+
+
 Measure #10 (PD: 3)
------------------
+------------------------
 
 % of families offered home visiting services that enrolled in home visiting services
 
@@ -142,16 +160,22 @@ Measure #10 (PD: 3)
 **denominator**: N of families referred this month with a completed referral
 
 
+
+
 Measure #11 (PD: 3)
------------------
+------------------------
 
 Among families enrolled, Average N of days between receipt of referral and enrollment
 
-**note**:Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ...
+
+
+
+
+**note**: Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ...
 
 
 Measure #12 (PD: 4)
------------------
+------------------------
 
 % of families without a 21+ day drought between visits
 
@@ -160,8 +184,10 @@ Measure #12 (PD: 4)
 **denominator**: N of families for whom weekly or biweekly visits are expected
 
 
+
+
 Measure #13 (PD: 4)
------------------
+------------------------
 
 % of families on alternate visit schedule
 
@@ -170,8 +196,10 @@ Measure #13 (PD: 4)
 **denominator**: N of enrolled families
 
 
+
+
 Measure #14a (PD: 5)
------------------
+------------------------
 
 % of families completing 3+ months
 
@@ -180,8 +208,10 @@ Measure #14a (PD: 5)
 **denominator**: N of families whose 1st HV was 3 to 6 months ago
 
 
+
+
 Measure #14b (PD: 5)
------------------
+------------------------
 
 % of families completing 6+ months
 
@@ -190,8 +220,10 @@ Measure #14b (PD: 5)
 **denominator**: N of families whose 1st HV was 6 to 12 months ago
 
 
+
+
 Measure #14c (PD: 5)
------------------
+------------------------
 
 % of families completing 12+ months
 
@@ -200,18 +232,22 @@ Measure #14c (PD: 5)
 **denominator**: N of families whose 1st HV was 12 to 18 months ago
 
 
+
+
 Measure #14c (PD: 5)
------------------
+------------------------
 
 % of families completing 12+ months
 
 **numerator**: N of families whose 1st HV was 12+ months of visits
 
 **denominator**: N of families whose 1st HV was 12 to 18 months ago
+
+
 
 
 Measure #17 (PD: 5)
------------------
+------------------------
 
 % of families that disenrolled from the program for 'addressable' reasons
 
@@ -219,11 +255,11 @@ Measure #17 (PD: 5)
 
 **denominator**: N of families who disenrolled from the home visiting program
 
-**note**:Help us define “addressable” along the lines of  ‘legitimate’ or ‘valid’ or ‘justified’
+**note**: Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
 
 
 Measure #18 (PD: ?)
------------------
+------------------------
 
 % of families ask about child development
 
@@ -231,7 +267,7 @@ Measure #18 (PD: ?)
 
 **denominator**: N of visits w/ child 0+ days old
 
-**note**:ETO item needs a third option “did not ask parent” (visit touchpoint)
+**note**: ETO item needs a third option “did not ask parent” (visit touchpoint)
 
 ## Static Table
 
@@ -254,7 +290,7 @@ Root      14        14a          % of families completing 3+ months             
 Root      15        14b          % of families completing 6+ months                                                      5                N of families who completed 6+ months of visits                                                                                                                                                        N of families whose 1st HV was 6 to 12 months ago                                   NA                                                                                                  NA                                                                                                                      
 Root      16        14c          % of families completing 12+ months                                                     5                N of families whose 1st HV was 12+ months of visits                                                                                                                                                    N of families whose 1st HV was 12 to 18 months ago                                  NA                                                                                                  NA                                                                                                                      
 Root      17        14c          % of families completing 12+ months                                                     5                N of families whose 1st HV was 12+ months of visits                                                                                                                                                    N of families whose 1st HV was 12 to 18 months ago                                  NA                                                                                                  NA                                                                                                                      
-Root      18        17           % of families that disenrolled from the program for 'addressable' reasons               5                N of families who disenrolled for ‘addressable’ reasons                                                                                                                                                N of families who disenrolled from the home visiting program                        NA                                                                                                  Help us define “addressable” along the lines of  ‘legitimate’ or ‘valid’ or ‘justified’                                 
+Root      18        17           % of families that disenrolled from the program for 'addressable' reasons               5                N of families who disenrolled for ‘addressable’ reasons                                                                                                                                                N of families who disenrolled from the home visiting program                        NA                                                                                                  Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’                                  
 Root      19        18           % of families ask about child development                                               ?                N of visits that provider asked if parent has concerns about the development of child.                                                                                                                 N of visits w/ child 0+ days old                                                    NA                                                                                                  ETO item needs a third option “did not ask parent” (visit touchpoint)                                                   
 
 ## Static Tree
@@ -429,7 +465,7 @@ Root      19        18           % of families ask about child development      
 16                                                                                                                        
 17                                                                                                                        
 18                                                                                                                        
-19                                 Help us define “addressable” along the lines of  ‘legitimate’ or ‘valid’ or ‘justified’
+19                                  Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
 20                                                   ETO item needs a third option “did not ask parent” (visit touchpoint)
 ```
 
@@ -482,7 +518,7 @@ Packages -----------------------------------------------------------------------
  dplyr             0.7.1      2017-06-22 CRAN (R 3.4.0)                       
  evaluate          0.10.1     2017-06-24 CRAN (R 3.4.0)                       
  ggplot2           2.2.1.9000 2017-07-11 Github (hadley/ggplot2@4255cd8)      
- glue              1.1.1      2017-06-21 CRAN (R 3.4.0)                       
+ glue            * 1.1.1      2017-06-21 CRAN (R 3.4.0)                       
  graphics        * 3.4.1      2017-07-08 local                                
  grDevices       * 3.4.1      2017-07-08 local                                
  grid              3.4.1      2017-07-08 local                                
@@ -531,5 +567,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-14, 09:31 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-14, 09:58 -0500 in 2 seconds.
 

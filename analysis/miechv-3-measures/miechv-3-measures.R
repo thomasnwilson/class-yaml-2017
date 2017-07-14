@@ -7,6 +7,7 @@ rm(list=ls(all=TRUE)) #Clear the memory for any variables set from any previous 
 
 # ---- load-packages -----------------------------------------------------------
 library(magrittr                , quietly=TRUE)
+library(glue                    , quietly=TRUE)
 
 requireNamespace("data.tree"                  )
 requireNamespace("collapsibleTree"            )
@@ -43,17 +44,24 @@ ds %>%
 
 
 # ---- list-static -------------------------------------------------------------
-display_measure <- function( x ) {
+display_attribute <- function( a, name, prefix=glue("**{name}**: ")) {
   # browser()
+  if( !is.null(a[[name]]) ) {
+    glue("{prefix}{value}\n", value=a[[name]])
+  } else {
+    ""
+  }
+}
+display_measure <- function( x ) {
   x %>%
-    glue::glue_data(
-      "\nMeasure #{.$measure_id} (PD: {.$driver_primary})\n",
-      "-----------------\n\n",
-      "{.$description}\n\n",
-      {dplyr::if_else(!is.null(.$numerator), paste0("**numerator**: ", .$numerator, "\n\n"), "")},
-      {dplyr::if_else(!is.null(.$denominator), paste0("**denominator**: ", .$denominator, "\n\n"), "")},
-      {dplyr::if_else(!is.null(.$note), paste0("**note**:", .$note, "\n\n"), "")},
-      "\n\n"
+    glue_data(
+      "\nMeasure #{.$measure_id} (PD: {.$driver_primary})\n------------------------",
+      {.$description},
+      {display_attribute(., "numerator")},
+      {display_attribute(., "denominator")},
+      {display_attribute(., "note")},
+      "\n\n",
+      .sep = "\n\n"
     )
 
 }
