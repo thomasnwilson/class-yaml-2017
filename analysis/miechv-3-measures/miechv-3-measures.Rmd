@@ -76,6 +76,10 @@ read_chunk("./analysis/miechv-3-measures/miechv-3-measures.R") #This allows knit
 
 # Display
 
+## Static list
+```{r list-static, results='asis', echo=echo_chunks, message=message_chunks}
+```
+
 ## Static Table
 ```{r table-static, echo=echo_chunks, message=message_chunks}
 ```

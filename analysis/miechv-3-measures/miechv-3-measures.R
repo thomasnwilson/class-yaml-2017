@@ -18,7 +18,7 @@ requireNamespace("OuhscMunge"                 )   # devtools::install_github("Ou
 
 # ---- declare-globals ---------------------------------------------------------
 path_input     <- "./data-public/raw/miechv-3-outcome-measure.yml"
-variables      <- c("measure_id", "description", "driver_primary", "numerator", "denominator")
+variables      <- c("measure_id", "description", "driver_primary", "numerator", "denominator", "definition", "note")
 
 # ---- load-data ---------------------------------------------------------------
 l <- yaml::yaml.load_file(path_input)
@@ -31,7 +31,7 @@ ds <- data.tree:::ToDataFrameTypeCol(dt, variables)
 
 # ---- tree-static --------------------------------------------------------------
 data.tree:::print.Node(dt, limit=NULL)
-print(dt, "measure_id", "description", "driver_primary", "numerator", "denominator", pruneMethod = "simple")
+print(dt, "measure_id", "description", "driver_primary", "numerator", "denominator", "definition", "note", pruneMethod = "simple")
 
 # print(dt)
 
@@ -40,6 +40,26 @@ ds %>%
   knitr::kable(
     col.names = gsub("_", " ", colnames(.))
   )
+
+
+# ---- list-static -------------------------------------------------------------
+display_measure <- function( x ) {
+  # browser()
+  paste0(
+    "\nMeasure #", x$measure_id, " (PD: ", x$driver_primary,")\n",
+    "-----------------\n\n",
+    x$description, "\n\n",
+    "**numerator**: ", x$numerator, "\n\n",
+    "**denominator**: ", x$denominator, "\n\n",
+    dplyr::if_else(!is.null(x$note), paste0("**note**:", x$note), "\n\n", ""),
+    "\n\n"
+  )
+
+}
+
+l %>%
+  purrr::map_chr(display_measure) %>%
+  cat(sep="")
 
 
 # ---- tree-dynamic --------------------------------------------------------------

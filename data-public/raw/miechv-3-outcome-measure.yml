@@ -69,7 +69,6 @@
   description: "% of families without a 21+ day drought between visits"
   driver_primary: 4
   numerator: Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits
-
   denominator: N of families for whom weekly or biweekly visits are expected
 -
   measure_id: 13
