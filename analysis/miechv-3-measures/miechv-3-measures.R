@@ -18,19 +18,20 @@ requireNamespace("OuhscMunge"                 )   # devtools::install_github("Ou
 
 # ---- declare-globals ---------------------------------------------------------
 path_input     <- "./data-public/raw/miechv-3-outcome-measure.yml"
+variables      <- c("measure_id", "description", "driver_primary", "numerator", "denominator")
 
 # ---- load-data ---------------------------------------------------------------
 l <- yaml::yaml.load_file(path_input)
 
 # ---- tweak-data --------------------------------------------------------------
 dt <- data.tree::as.Node(l)
-# ds <- data.tree:::as.data.frame.Node(dt, row.names=T, optional=F, "measure_id", "description", "numerator", "denominator")
-# ds <- data.tree:::ToDataFrameTable(dt, "measure_id", "description", "numerator", "denominator")
-ds <- data.tree:::ToDataFrameTypeCol(dt, "measure_id", "description", "numerator", "denominator")
+# ds <- data.tree:::as.data.frame.Node(dt, row.names=T, optional=F, variables)
+# ds <- data.tree:::ToDataFrameTable(dt, "measure_id", variables)
+ds <- data.tree:::ToDataFrameTypeCol(dt, variables)
 
 # ---- tree-static --------------------------------------------------------------
 data.tree:::print.Node(dt, limit=NULL)
-print(dt, "measure_id", "description", "numerator", "denominator", pruneMethod = "simple")
+print(dt, "measure_id", "description", "driver_primary", "numerator", "denominator", pruneMethod = "simple")
 
 # print(dt)
 

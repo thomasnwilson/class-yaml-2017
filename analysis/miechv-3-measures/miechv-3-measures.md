@@ -43,10 +43,10 @@ Warning: replacing previous import 'scales::viridis_pal' by 'viridis::viridis_pa
 
 ## Static Table
 
-level 1   level 2   measure id   description                                                              numerator                                                                         denominator                                                                       
---------  --------  -----------  -----------------------------------------------------------------------  --------------------------------------------------------------------------------  ----------------------------------------------------------------------------------
-Root      1         1            % of families that received all of the expected home visits this month   N of enrolled families that received all of the expected home visits this month   N enrolled families not on creative outreach, alternate visit schedule or level X 
-Root      2         2s           % total capacity served                                                  Current caseload                                                                  Expected service capacity                                                         
+level 1   level 2    measure id  description                                                              driver primary   numerator                                                                         denominator                                                                       
+--------  --------  -----------  -----------------------------------------------------------------------  ---------------  --------------------------------------------------------------------------------  ----------------------------------------------------------------------------------
+Root      1                   1  % of families that received all of the expected home visits this month   SMART Aim        N of enrolled families that received all of the expected home visits this month   N enrolled families not on creative outreach, alternate visit schedule or level X 
+Root      2                   2  % total capacity served                                                  3                Current caseload                                                                  Expected service capacity                                                         
 
 ## Static Tree
 
@@ -59,13 +59,13 @@ Root      2         2s           % total capacity served                        
 
 ```
   levelName measure_id                                                            description
-1     Root                                                                                   
+1     Root          NA                                                                       
 2      ¦--1          1 % of families that received all of the expected home visits this month
-3      °--2         2s                                                % total capacity served
-                                                                        numerator
-1                                                                                
-2 N of enrolled families that received all of the expected home visits this month
-3                                                                Current caseload
+3      °--2          2                                                % total capacity served
+  driver_primary                                                                       numerator
+1                                                                                               
+2      SMART Aim N of enrolled families that received all of the expected home visits this month
+3              3                                                                Current caseload
                                                                         denominator
 1                                                                                  
 2 N enrolled families not on creative outreach, alternate visit schedule or level X
@@ -169,5 +169,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-14, 07:16 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-14, 07:21 -0500 in 2 seconds.
 

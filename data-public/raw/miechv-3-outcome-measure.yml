@@ -1,10 +1,12 @@
 -
   measure_id: 1
   description: "% of families that received all of the expected home visits this month"
+  driver_primary: SMART Aim
   numerator: N of enrolled families that received all of the expected home visits this month
   denominator: N enrolled families not on creative outreach, alternate visit schedule or level X
 -
-  measure_id: 2s
+  measure_id: 2
   description: "% total capacity served"
+  driver_primary: 3
   numerator:  Current caseload
   denominator:  Expected service capacity
