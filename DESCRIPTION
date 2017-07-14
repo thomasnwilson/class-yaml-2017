@@ -1,0 +1,29 @@
+Package: ClassYaml2017
+Title: Material for short workshop on YAML.
+Description: Learn how to incorporate nonrectangular datasets.
+Version: 0.0.1.9000
+Date: 2017-07-13
+Authors@R: c(person("Will", "Beasley", role = c("aut", "cre"), email =
+    "wibeasley@hotmail.com"))
+URL: https://github.com/wibeasley/class-yaml-2017, http://ouhsc.edu/bbmc/
+BugReports: https://github.com/wibeasley/class-yaml-2017/issues
+Depends:
+    R(>= 3.0.0),
+    stats
+Imports:
+    dplyr,
+    methods,
+    magrittr,
+    readr,
+    tidyr,
+    tibble,
+    yaml
+Suggests:
+    devtools,
+    knitr,
+    rmarkdown,
+    testthat
+License: MIT + file LICENSE
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
