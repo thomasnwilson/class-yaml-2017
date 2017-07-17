@@ -1,4 +1,3 @@
-
 #This next line is run when the whole file is executed, but not when knitr calls individual chunks.
 rm(list=ls(all=TRUE)) #Clear the memory for any variables set from any previous runs.
 
@@ -51,9 +50,7 @@ print(dt, "measure_id", "title", "description", "driver_primary", "numerator", "
 # print(dt)
 
 # ---- list-static -------------------------------------------------------------
-
 display_attribute <- function( a, name, prefix=glue("* **{name}**: "), ending="\n") {
-  # browser()
   if( !is.null(a[[name]]) ) {
     value <- format_symbols(a[[name]])
     glue("{prefix}{value}{ending}", value=value)
@@ -71,10 +68,9 @@ display_measure <- function( x ) {
       {display_attribute(., "denominator")},
       {display_attribute(., "definition")},
       {display_attribute(., "note")},
-      "\n\n"#,
+      "\n\n"
       # .sep = "\n"
     )
-
 }
 
 l %>%
@@ -85,45 +81,45 @@ l %>%
 # ---- table-static-planned ------------------------------------------------------------
 format_static_table <- function( d ) {
   d %>%
-  dplyr::select(-level_1, -level_2) %>%
-  dplyr::mutate(
-    title         = gsub("_", "<br/>", title),
-    title         = gsub("appropriateness", "appropri-<br/>ateness", title)
-  ) %>%
-  dplyr::mutate(
-    title_driver  = as.character(glue("{.$title}<br/>({.$driver_primary})")),
-    equation = dplyr::case_when(
-      !is.na(.$definition)    ~ definition,
-      !is.na(.$numerator)     ~ as.character(glue("**numerator**: {.$numerator}<br/>**denominator**: {.$denominator}")),
-      TRUE                    ~ NA_character_
+    dplyr::select(-level_1, -level_2) %>%
+    dplyr::mutate(
+      title         = gsub("_", "<br/>", title),
+      title         = gsub("appropriateness", "appropri-<br/>ateness", title)
+    ) %>%
+    dplyr::mutate(
+      title_driver  = as.character(glue("{.$title}<br/>({.$driver_primary})")),
+      equation = dplyr::case_when(
+        !is.na(.$definition)    ~ definition,
+        !is.na(.$numerator)     ~ as.character(glue("**numerator**: {.$numerator}<br/>**denominator**: {.$denominator}")),
+        TRUE                    ~ NA_character_
+      )
+    ) %>%
+    dplyr::select(
+      -numerator, -denominator, -definition
+    ) %>%
+    dplyr::mutate_at(
+      c("title_driver", "description", "driver_primary", "equation", "note"),
+      format_symbols
+    ) %>%
+    dplyr::select(
+      id                      = measure_id,
+      `title<br/>(driver)`    = title_driver,
+      description,
+      equation,
+      note
+    ) %>%
+    knitr::kable(
+      col.names = gsub("_", " ", colnames(.)),
+      format    = "html",
+      escape    = F
+    ) %>%
+    kableExtra::kable_styling(
+      bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+      full_width        = F,
+      position          = "left"
     )
-  ) %>%
-  dplyr::select(
-    -numerator, -denominator, -definition
-  ) %>%
-  dplyr::mutate_at(
-    c("title_driver", "description", "driver_primary", "equation", "note"),
-    format_symbols
-  ) %>%
-  dplyr::select(
-    id              = measure_id,
-    `title<br/>(driver)`    = title_driver,
-    description,
-    equation,
-    # driver_primary,
-    note
-  ) %>%
-  knitr::kable(
-    col.names = gsub("_", " ", colnames(.)),
-    format    = "html",
-    escape    = F
-  ) %>%
-  kableExtra::kable_styling(
-    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
-    full_width        = F,
-    position          = "left"
-  )
 }
+
 ds %>%
   tibble::as_tibble() %>%
   dplyr::filter(status == "planned") %>%
@@ -131,9 +127,7 @@ ds %>%
   format_static_table()
 
 
-
 # ---- table-static-proposed ---------------------------------------------------
-
 ds %>%
   tibble::as_tibble() %>%
   dplyr::filter(status == "proposed") %>%
