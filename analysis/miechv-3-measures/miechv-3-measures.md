@@ -195,28 +195,213 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 * **note**: ETO item needs a third option “did not ask parent” (visit touchpoint)
 
 ## Static Table
-
-level 1   level 2   measure id   title                      description                                                                             driver primary   numerator                                                                                                                                                                                              denominator                                                                         definition                                                                                          note                                                                                                                    
---------  --------  -----------  -------------------------  --------------------------------------------------------------------------------------  ---------------  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------------------------------------
-Root      1         1            visits_all                 % of families that received all of the expected home visits this month                  SMART Aim        N of enrolled families that received all of the expected home visits this month                                                                                                                        N enrolled families not on creative outreach, alternate visit schedule or level X   NA                                                                                                  NA                                                                                                                      
-Root      2         2            capacity_served            % total capacity served                                                                 3                Current caseload                                                                                                                                                                                       Expected service capacity                                                           NA                                                                                                  NA                                                                                                                      
-Root      3         3            capacity_filled            % of available capacity that was filled this month                                      3                N of families enrolled this month                                                                                                                                                                      Available service capacity at beginning of month                                    NA                                                                                                  NA                                                                                                                      
-Root      4         4            referral_suitability       Ratio of suitable referrals to available service capacity                               3                N of referrals received this month                                                                                                                                                                     available service capacity                                                          NA                                                                                                  NA                                                                                                                      
-Root      5         5            referral_contacted         % of families contacted, among those attempted to contact                               3                N of families referred this month that were contacted                                                                                                                                                  N of families referred this month that attempted to contact                         NA                                                                                                  NA                                                                                                                      
-Root      6         6            referral_appropriateness   % of referrals that were appropriate                                                    3                N of referrals this month that were appropriate                                                                                                                                                        N of families referred this month that were contacted                               NA                                                                                                  NA                                                                                                                      
-Root      7         7a           contact_any                % of referred families contacted who received any contact within 48 hours               3                N of families contacted that received any contact within 48 hours                                                                                                                                      N of families referred this month that were contacted                               NA                                                                                                  NA                                                                                                                      
-Root      8         7b           contact_face               % of referred families contacted who received a face-to-face contact                    3                N of families contacted that received a first face-to-face contact                                                                                                                                     N of families referred this month that were contacted                               NA                                                                                                  NA                                                                                                                      
-Root      9         8            contact_lag                Average N of days from referral to 1st face-to-face contact                             3                N of families referred this month that were contacted and offered home visiting services                                                                                                               N of families referred this month that were contacted                               NA                                                                                                  NA                                                                                                                      
-Root      10        10           enrolled                   % of families offered home visiting services that enrolled in home visiting services    3                N of families referred this month that were offered home visiting services that enrolled in home visiting services                                                                                     N of families referred this month with a completed referral                         NA                                                                                                  NA                                                                                                                      
-Root      11        11           enroll_lag                 Among families enrolled, Average N of days between receipt of referral and enrollment   3                NA                                                                                                                                                                                                     NA                                                                                  Since there could be different valid definitions of “referral date”, this may need to be measures   Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ... 
-Root      12        12           visit_drought              % of families without a 21+ day drought between visits                                  4                Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits                                                                                                      N of families for whom weekly or biweekly visits are expected                       NA                                                                                                  NA                                                                                                                      
-Root      13        13           visit_schedule_alternate   % of families on alternate visit schedule                                               4                N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.   N of enrolled families                                                              NA                                                                                                  NA                                                                                                                      
-Root      14        14a          retention_month_03         % of families completing 3+ months                                                      5                N of families who completed 3+ months of visits                                                                                                                                                        N of families whose 1st HV was 3 to 6 months ago                                    NA                                                                                                  NA                                                                                                                      
-Root      15        14b          retention_month_06         % of families completing 6+ months                                                      5                N of families who completed 6+ months of visits                                                                                                                                                        N of families whose 1st HV was 6 to 12 months ago                                   NA                                                                                                  NA                                                                                                                      
-Root      16        14c          retention_month_12         % of families completing 12+ months                                                     5                N of families whose 1st HV was 12+ months of visits                                                                                                                                                    N of families whose 1st HV was 12 to 18 months ago                                  NA                                                                                                  NA                                                                                                                      
-Root      17        14d          retention_month_18         % of families completing 18+ months                                                     5                N of families whose 1st HV was 18+ months of visits                                                                                                                                                    N of families whose 1st HV was 18 to 24 months ago                                  NA                                                                                                  NA                                                                                                                      
-Root      18        17           disenrolled_addressable    % of families that disenrolled from the program for 'addressable' reasons               5                N of families who disenrolled for ‘addressable’ reasons                                                                                                                                                N of families who disenrolled from the home visiting program                        NA                                                                                                  Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’                                  
-Root      19        18           inquire_development        % of families ask about child development                                               ?                N of visits that provider asked if parent has concerns about the development of child.                                                                                                                 N of visits w/ child 0+ days old                                                    NA                                                                                                  ETO item needs a third option “did not ask parent” (visit touchpoint)                                                   
+<?xml version="1.0" encoding="UTF-8"?>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; text-align: right;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> measure id </th>
+   <th style="text-align:left;"> title </th>
+   <th style="text-align:left;"> description </th>
+   <th style="text-align:left;"> driver primary </th>
+   <th style="text-align:left;"> numerator </th>
+   <th style="text-align:left;"> denominator </th>
+   <th style="text-align:left;"> definition </th>
+   <th style="text-align:left;"> note </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> visits all </td>
+   <td style="text-align:left;"> % of families that received all of the expected home visits this month </td>
+   <td style="text-align:left;"> SMART Aim </td>
+   <td style="text-align:left;"> N of enrolled families that received all of the expected home visits this month </td>
+   <td style="text-align:left;"> N enrolled families not on creative outreach, alternate visit schedule or level X </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> capacity served </td>
+   <td style="text-align:left;"> % total capacity served </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> Current caseload </td>
+   <td style="text-align:left;"> Expected service capacity </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> capacity filled </td>
+   <td style="text-align:left;"> % of available capacity that was filled this month </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> N of families enrolled this month </td>
+   <td style="text-align:left;"> Available service capacity at beginning of month </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> referral suitability </td>
+   <td style="text-align:left;"> Ratio of suitable referrals to available service capacity </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> N of referrals received this month </td>
+   <td style="text-align:left;"> available service capacity </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> referral contacted </td>
+   <td style="text-align:left;"> % of families contacted, among those attempted to contact </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> N of families referred this month that were contacted </td>
+   <td style="text-align:left;"> N of families referred this month that attempted to contact </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> referral appropriateness </td>
+   <td style="text-align:left;"> % of referrals that were appropriate </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> N of referrals this month that were appropriate </td>
+   <td style="text-align:left;"> N of families referred this month that were contacted </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7a </td>
+   <td style="text-align:left;"> contact any </td>
+   <td style="text-align:left;"> % of referred families contacted who received any contact within 48 hours </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> N of families contacted that received any contact within 48 hours </td>
+   <td style="text-align:left;"> N of families referred this month that were contacted </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7b </td>
+   <td style="text-align:left;"> contact face </td>
+   <td style="text-align:left;"> % of referred families contacted who received a face-to-face contact </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> N of families contacted that received a first face-to-face contact </td>
+   <td style="text-align:left;"> N of families referred this month that were contacted </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 8 </td>
+   <td style="text-align:left;"> contact lag </td>
+   <td style="text-align:left;"> Average N of days from referral to 1st face-to-face contact </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> N of families referred this month that were contacted and offered home visiting services </td>
+   <td style="text-align:left;"> N of families referred this month that were contacted </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 10 </td>
+   <td style="text-align:left;"> enrolled </td>
+   <td style="text-align:left;"> % of families offered home visiting services that enrolled in home visiting services </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> N of families referred this month that were offered home visiting services that enrolled in home visiting services </td>
+   <td style="text-align:left;"> N of families referred this month with a completed referral </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 11 </td>
+   <td style="text-align:left;"> enroll lag </td>
+   <td style="text-align:left;"> Among families enrolled, Average N of days between receipt of referral and enrollment </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Since there could be different valid definitions of “referral date”, this may need to be measures </td>
+   <td style="text-align:left;"> Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ... </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 12 </td>
+   <td style="text-align:left;"> visit drought </td>
+   <td style="text-align:left;"> % of families without a 21+ day drought between visits </td>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits </td>
+   <td style="text-align:left;"> N of families for whom weekly or biweekly visits are expected </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 13 </td>
+   <td style="text-align:left;"> visit schedule alternate </td>
+   <td style="text-align:left;"> % of families on alternate visit schedule </td>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc. </td>
+   <td style="text-align:left;"> N of enrolled families </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 14a </td>
+   <td style="text-align:left;"> retention month 03 </td>
+   <td style="text-align:left;"> % of families completing 3+ months </td>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> N of families who completed 3+ months of visits </td>
+   <td style="text-align:left;"> N of families whose 1st HV was 3 to 6 months ago </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 14b </td>
+   <td style="text-align:left;"> retention month 06 </td>
+   <td style="text-align:left;"> % of families completing 6+ months </td>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> N of families who completed 6+ months of visits </td>
+   <td style="text-align:left;"> N of families whose 1st HV was 6 to 12 months ago </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 14c </td>
+   <td style="text-align:left;"> retention month 12 </td>
+   <td style="text-align:left;"> % of families completing 12+ months </td>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> N of families whose 1st HV was 12+ months of visits </td>
+   <td style="text-align:left;"> N of families whose 1st HV was 12 to 18 months ago </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 14d </td>
+   <td style="text-align:left;"> retention month 18 </td>
+   <td style="text-align:left;"> % of families completing 18+ months </td>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> N of families whose 1st HV was 18+ months of visits </td>
+   <td style="text-align:left;"> N of families whose 1st HV was 18 to 24 months ago </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 17 </td>
+   <td style="text-align:left;"> disenrolled addressable </td>
+   <td style="text-align:left;"> % of families that disenrolled from the program for 'addressable' reasons </td>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> N of families who disenrolled for ‘addressable’ reasons </td>
+   <td style="text-align:left;"> N of families who disenrolled from the home visiting program </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 18 </td>
+   <td style="text-align:left;"> inquire development </td>
+   <td style="text-align:left;"> % of families ask about child development </td>
+   <td style="text-align:left;"> ? </td>
+   <td style="text-align:left;"> N of visits that provider asked if parent has concerns about the development of child. </td>
+   <td style="text-align:left;"> N of visits w/ child 0+ days old </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> ETO item needs a third option “did not ask parent” (visit touchpoint) </td>
+  </tr>
+</tbody>
+</table>
 
 ## Static Tree
 
@@ -429,7 +614,7 @@ Packages -----------------------------------------------------------------------
  backports         1.1.0      2017-05-22 CRAN (R 3.4.0)                       
  base            * 3.4.1      2017-07-08 local                                
  bindr             0.1        2016-11-13 CRAN (R 3.4.1)                       
- bindrcpp          0.2        2017-06-17 CRAN (R 3.4.0)                       
+ bindrcpp        * 0.2        2017-06-17 CRAN (R 3.4.0)                       
  brew              1.0-6      2011-04-13 CRAN (R 3.4.1)                       
  checkmate         1.8.3      2017-07-03 Github (mllg/checkmate@43241ee)      
  collapsibleTree   0.1.4      2017-03-22 CRAN (R 3.4.0)                       
@@ -450,11 +635,14 @@ Packages -----------------------------------------------------------------------
  gridExtra         2.2.1      2016-02-29 CRAN (R 3.4.1)                       
  gtable            0.2.0      2016-02-26 CRAN (R 3.4.1)                       
  highr             0.6        2016-05-09 CRAN (R 3.4.1)                       
+ hms               0.3        2016-11-22 CRAN (R 3.4.1)                       
  htmltools         0.3.6      2017-04-28 CRAN (R 3.4.0)                       
  htmlwidgets       0.9        2017-07-11 Github (ramnathv/htmlwidgets@6f4101d)
+ httr              1.2.1      2016-07-03 CRAN (R 3.4.1)                       
  igraph            1.0.1      2015-06-26 CRAN (R 3.4.1)                       
  influenceR        0.1.0      2015-09-03 CRAN (R 3.4.0)                       
  jsonlite          1.5        2017-06-01 CRAN (R 3.4.0)                       
+ kableExtra        0.3.0      2017-07-04 CRAN (R 3.4.1)                       
  knitr           * 1.16       2017-05-18 CRAN (R 3.4.0)                       
  lazyeval          0.2.0      2016-06-12 CRAN (R 3.4.1)                       
  magrittr        * 1.5        2014-11-22 CRAN (R 3.4.1)                       
@@ -468,12 +656,14 @@ Packages -----------------------------------------------------------------------
  R6                2.2.2      2017-06-17 CRAN (R 3.4.0)                       
  RColorBrewer      1.1-2      2014-12-07 CRAN (R 3.4.1)                       
  Rcpp              0.12.11    2017-05-22 CRAN (R 3.4.0)                       
+ readr             1.1.1      2017-05-16 CRAN (R 3.4.0)                       
  rgexf             0.15.3     2015-03-24 CRAN (R 3.4.0)                       
  rlang             0.1.1.9000 2017-07-02 Github (hadley/rlang@ff87439)        
  rmarkdown         1.6        2017-06-15 CRAN (R 3.4.0)                       
  Rook              1.1-1      2014-10-20 CRAN (R 3.4.0)                       
  rprojroot         1.2        2017-01-16 CRAN (R 3.4.1)                       
  rstudioapi        0.6        2016-06-27 CRAN (R 3.4.1)                       
+ rvest             0.3.2      2016-06-17 CRAN (R 3.4.1)                       
  scales            0.4.1.9002 2017-07-11 Github (hadley/scales@6db7b6f)       
  stats           * 3.4.1      2017-07-08 local                                
  stringi           1.1.5      2017-04-07 CRAN (R 3.4.1)                       
@@ -486,11 +676,12 @@ Packages -----------------------------------------------------------------------
  visNetwork        2.0.0      2017-06-26 CRAN (R 3.4.0)                       
  withr             1.0.2      2016-06-20 CRAN (R 3.4.1)                       
  XML               3.98-1.9   2017-06-19 CRAN (R 3.4.0)                       
+ xml2              1.1.1      2017-01-24 CRAN (R 3.4.1)                       
  yaml              2.1.14     2016-11-12 CRAN (R 3.4.1)                       
 ```
 </details>
 
 
 
-Report rendered by wibeasley at 2017-07-17, 12:57 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-17, 13:10 -0500 in 2 seconds.
 

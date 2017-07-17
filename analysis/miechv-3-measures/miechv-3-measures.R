@@ -12,9 +12,11 @@ library(glue                    , quietly=TRUE)
 requireNamespace("data.tree"                  )
 requireNamespace("collapsibleTree"            )
 requireNamespace("dplyr"                      )
-requireNamespace("yaml"                       )
+requireNamespace("purrr"                      )
 requireNamespace("tibble"                     )
+requireNamespace("yaml"                       )
 requireNamespace("checkmate"                  )
+requireNamespace("kableExtra"                 )
 requireNamespace("OuhscMunge"                 )   # devtools::install_github("OuhscBbmc/OuhscMunge") #, ref="dev")
 
 # ---- declare-globals ---------------------------------------------------------
@@ -43,8 +45,19 @@ print(dt, "measure_id", "title", "description", "driver_primary", "numerator", "
 
 # ---- table-static ------------------------------------------------------------
 ds %>%
+  tibble::as_tibble() %>%
+  dplyr::select(-level_1, -level_2) %>%
+  dplyr::mutate(
+    title         = gsub("_", " ", title)
+  ) %>%
   knitr::kable(
-    col.names = gsub("_", " ", colnames(.))
+    col.names = gsub("_", " ", colnames(.)),
+    format    = "html"
+  ) %>%
+  kableExtra::kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width        = F,
+    position          = "left"
   )
 
 
