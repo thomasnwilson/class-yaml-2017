@@ -52,11 +52,11 @@ print(dt, "measure_id", "title", "description", "driver_primary", "numerator", "
 
 # ---- list-static -------------------------------------------------------------
 
-display_attribute <- function( a, name, prefix=glue("* **{name}**: ")) {
+display_attribute <- function( a, name, prefix=glue("* **{name}**: "), ending="\n") {
   # browser()
   if( !is.null(a[[name]]) ) {
     value <- format_symbols(a[[name]])
-    glue("{prefix}{value}\n", value=value)
+    glue("{prefix}{value}{ending}", value=value)
   } else {
     character(1)
   }
@@ -64,14 +64,15 @@ display_attribute <- function( a, name, prefix=glue("* **{name}**: ")) {
 display_measure <- function( x ) {
   x %>%
     glue_data(
-      "### {.$title}",
-      "{format_symbols(.$description)}\n",
-      "* **measure** #{.$measure_id}; **pd**: {.$driver_primary}",
+      "### {.$title}\n",
+      "{format_symbols(.$description)}\n\n",
+      "* **measure** #{.$measure_id}; **pd**: {.$driver_primary}\n",
       {display_attribute(., "numerator")},
       {display_attribute(., "denominator")},
+      {display_attribute(., "definition")},
       {display_attribute(., "note")},
-      "\n\n",
-      .sep = "\n"
+      "\n\n"#,
+      # .sep = "\n"
     )
 
 }

@@ -47,14 +47,12 @@ Instructions:  Discuss the (a) usefulness, (b) feasibility, and (c) definitions 
 * **numerator**: *N* of enrolled families that received all of the expected home visits this month
 * **denominator**: *N* enrolled families not on creative outreach, alternate visit schedule or level X
 
-
 ### capacity_served
 % total capacity served
 
 * **measure** #2; **pd**: 3
 * **numerator**: Current caseload
 * **denominator**: Expected service capacity
-
 
 ### capacity_filled
 % of available capacity that was filled this month
@@ -63,14 +61,12 @@ Instructions:  Discuss the (a) usefulness, (b) feasibility, and (c) definitions 
 * **numerator**: *N* of families enrolled this month
 * **denominator**: Available service capacity at beginning of month
 
-
 ### referral_suitability
 Ratio of suitable referrals to available service capacity
 
 * **measure** #4; **pd**: 3
 * **numerator**: *N* of referrals received this month
 * **denominator**: available service capacity
-
 
 ### referral_contacted
 % of families contacted, among those attempted to contact
@@ -79,14 +75,12 @@ Ratio of suitable referrals to available service capacity
 * **numerator**: *N* of families referred this month that were contacted
 * **denominator**: *N* of families referred this month that attempted to contact
 
-
 ### referral_appropriateness
 % of referrals that were appropriate
 
 * **measure** #6; **pd**: 3
 * **numerator**: *N* of referrals this month that were appropriate
 * **denominator**: *N* of families referred this month that were contacted
-
 
 ### contact_any
 % of referred families contacted who received any contact within 48 hours
@@ -95,14 +89,12 @@ Ratio of suitable referrals to available service capacity
 * **numerator**: *N* of families contacted that received any contact within 48 hours
 * **denominator**: *N* of families referred this month that were contacted
 
-
 ### contact_face
 % of referred families contacted who received a face-to-face contact
 
 * **measure** #7b; **pd**: 3
 * **numerator**: *N* of families contacted that received a first face-to-face contact
 * **denominator**: *N* of families referred this month that were contacted
-
 
 ### contact_lag
 Average *N* of days from referral to 1st face-to-face contact
@@ -111,7 +103,6 @@ Average *N* of days from referral to 1st face-to-face contact
 * **numerator**: *N* of families referred this month that were contacted and offered home visiting services
 * **denominator**: *N* of families referred this month that were contacted
 
-
 ### enrolled
 % of families offered home visiting services that enrolled in home visiting services
 
@@ -119,13 +110,11 @@ Average *N* of days from referral to 1st face-to-face contact
 * **numerator**: *N* of families referred this month that were offered home visiting services that enrolled in home visiting services
 * **denominator**: *N* of families referred this month with a completed referral
 
-
 ### enroll_lag
 Among families enrolled, Average *N* of days between receipt of referral and enrollment
 
 * **measure** #11; **pd**: 3
-
-
+* **definition**: Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …
 * **note**: Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ...
 
 ### visit_drought
@@ -135,14 +124,12 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 * **numerator**: Among families for whom weekly or biweekly visits are expected, *N* without 21+ days between visits
 * **denominator**: *N* of families for whom weekly or biweekly visits are expected
 
-
 ### visit_schedule_alternate
 % of families on alternate visit schedule
 
 * **measure** #13; **pd**: 4
 * **numerator**: *N* of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
 * **denominator**: *N* of enrolled families
-
 
 ### retention_month_03
 % of families completing 3+ months
@@ -151,14 +138,12 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 * **numerator**: *N* of families who completed 3+ months of visits
 * **denominator**: *N* of families whose 1st HV was 3 to 6 months ago
 
-
 ### retention_month_06
 % of families completing 6+ months
 
 * **measure** #14b; **pd**: 5
 * **numerator**: *N* of families who completed 6+ months of visits
 * **denominator**: *N* of families whose 1st HV was 6 to 12 months ago
-
 
 ### retention_month_12
 % of families completing 12+ months
@@ -167,14 +152,12 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 * **numerator**: *N* of families whose 1st HV was 12+ months of visits
 * **denominator**: *N* of families whose 1st HV was 12 to 18 months ago
 
-
 ### retention_month_18
 % of families completing 18+ months
 
 * **measure** #14d; **pd**: 5
 * **numerator**: *N* of families whose 1st HV was 18+ months of visits
 * **denominator**: *N* of families whose 1st HV was 18 to 24 months ago
-
 
 ### disenrolled_addressable
 % of families that disenrolled from the program for 'addressable' reasons
@@ -196,8 +179,6 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 % of visits considered 'succcessful'
 
 * **measure** #19; **pd**: 5
-
-
 * **note**: ?How should this be defined?
 
 ## Static Table of Planned Measures
@@ -323,7 +304,7 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
    <td style="text-align:left;"> 3 </td>
    <td style="text-align:left;"> -- </td>
    <td style="text-align:left;"> -- </td>
-   <td style="text-align:left;"> Since there could be different valid definitions of “referral date”, this may need to be measures </td>
+   <td style="text-align:left;"> Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c … </td>
    <td style="text-align:left;"> Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ... </td>
   </tr>
   <tr>
@@ -576,28 +557,28 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 19                      N of families who disenrolled from the home visiting program
 20                                                  N of visits w/ child 0+ days old
 21                                                                                  
-                                                                                          definition
-1                                                                                                   
-2                                                                                                   
-3                                                                                                   
-4                                                                                                   
-5                                                                                                   
-6                                                                                                   
-7                                                                                                   
-8                                                                                                   
-9                                                                                                   
-10                                                                                                  
-11                                                                                                  
-12 Since there could be different valid definitions of “referral date”, this may need to be measures
-13                                                                                                  
-14                                                                                                  
-15                                                                                                  
-16                                                                                                  
-17                                                                                                  
-18                                                                                                  
-19                                                                                                  
-20                                                                                                  
-21                                                                                                  
+                                                                                                             definition
+1                                                                                                                      
+2                                                                                                                      
+3                                                                                                                      
+4                                                                                                                      
+5                                                                                                                      
+6                                                                                                                      
+7                                                                                                                      
+8                                                                                                                      
+9                                                                                                                      
+10                                                                                                                     
+11                                                                                                                     
+12 Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …
+13                                                                                                                     
+14                                                                                                                     
+15                                                                                                                     
+16                                                                                                                     
+17                                                                                                                     
+18                                                                                                                     
+19                                                                                                                     
+20                                                                                                                     
+21                                                                                                                     
                                                                                                                       note
 1                                                                                                                         
 2                                                                                                                         
@@ -748,5 +729,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-17, 14:54 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-17, 15:35 -0500 in 2 seconds.
 

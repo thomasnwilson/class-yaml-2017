@@ -83,7 +83,7 @@
   title: enroll_lag
   description: "Among families enrolled, Average N of days between receipt of referral and enrollment"
   driver_primary: 3
-  definition: Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …
+  definition: "Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …"
   note: "Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ..."
   status: planned
 -
