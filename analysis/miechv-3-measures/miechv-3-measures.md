@@ -37,129 +37,127 @@ Instructions:  Discuss the (a) usefulness, (b) feasibility, and (c) definitions 
 
 ## Answered Questions
 
-# Display
-
-## Static list
-### visits_all
+# List
+## visits_all
 % of families that received all of the expected home visits this month
 
 * **measure** #1; **pd**: SMART Aim
 * **numerator**: *N* of enrolled families that received all of the expected home visits this month
 * **denominator**: *N* enrolled families not on creative outreach, alternate visit schedule or level X
 
-### capacity_served
+## capacity_served
 % total capacity served
 
 * **measure** #2; **pd**: 3
 * **numerator**: Current caseload
 * **denominator**: Expected service capacity
 
-### capacity_filled
+## capacity_filled
 % of available capacity that was filled this month
 
 * **measure** #3; **pd**: 3
 * **numerator**: *N* of families enrolled this month
 * **denominator**: Available service capacity at beginning of month
 
-### referral_suitability
+## referral_suitability
 Ratio of suitable referrals to available service capacity
 
 * **measure** #4; **pd**: 3
 * **numerator**: *N* of referrals received this month
 * **denominator**: available service capacity
 
-### referral_contacted
+## referral_contacted
 % of families contacted, among those attempted to contact
 
 * **measure** #5; **pd**: 3
 * **numerator**: *N* of families referred this month that were contacted
 * **denominator**: *N* of families referred this month that attempted to contact
 
-### referral_appropriateness
+## referral_appropriateness
 % of referrals that were appropriate
 
 * **measure** #6; **pd**: 3
 * **numerator**: *N* of referrals this month that were appropriate
 * **denominator**: *N* of families referred this month that were contacted
 
-### contact_any
+## contact_any
 % of referred families contacted who received any contact within 48 hours
 
 * **measure** #7a; **pd**: 3
 * **numerator**: *N* of families contacted that received any contact within 48 hours
 * **denominator**: *N* of families referred this month that were contacted
 
-### contact_face
+## contact_face
 % of referred families contacted who received a face-to-face contact
 
 * **measure** #7b; **pd**: 3
 * **numerator**: *N* of families contacted that received a first face-to-face contact
 * **denominator**: *N* of families referred this month that were contacted
 
-### contact_lag
+## contact_lag
 Average *N* of days from referral to 1st face-to-face contact
 
 * **measure** #8; **pd**: 3
 * **numerator**: *N* of families referred this month that were contacted and offered home visiting services
 * **denominator**: *N* of families referred this month that were contacted
 
-### enrolled
+## enrolled
 % of families offered home visiting services that enrolled in home visiting services
 
 * **measure** #10; **pd**: 3
 * **numerator**: *N* of families referred this month that were offered home visiting services that enrolled in home visiting services
 * **denominator**: *N* of families referred this month with a completed referral
 
-### enroll_lag
+## enroll_lag
 Among families enrolled, Average *N* of days between receipt of referral and enrollment
 
 * **measure** #11; **pd**: 3
 * **definition**: Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …
 * **note**: Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ...
 
-### visit_drought
+## visit_drought
 % of families without a 21+ day drought between visits
 
 * **measure** #12; **pd**: 4
 * **numerator**: Among families for whom weekly or biweekly visits are expected, *N* without 21+ days between visits
 * **denominator**: *N* of families for whom weekly or biweekly visits are expected
 
-### visit_schedule_alternate
+## visit_schedule_alternate
 % of families on alternate visit schedule
 
 * **measure** #13; **pd**: 4
 * **numerator**: *N* of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
 * **denominator**: *N* of enrolled families
 
-### retention_month_03
+## retention_month_03
 % of families completing 3+ months
 
 * **measure** #14a; **pd**: 5
 * **numerator**: *N* of families who completed 3+ months of visits
 * **denominator**: *N* of families whose 1st HV was 3 to 6 months ago
 
-### retention_month_06
+## retention_month_06
 % of families completing 6+ months
 
 * **measure** #14b; **pd**: 5
 * **numerator**: *N* of families who completed 6+ months of visits
 * **denominator**: *N* of families whose 1st HV was 6 to 12 months ago
 
-### retention_month_12
+## retention_month_12
 % of families completing 12+ months
 
 * **measure** #14c; **pd**: 5
 * **numerator**: *N* of families whose 1st HV was 12+ months of visits
 * **denominator**: *N* of families whose 1st HV was 12 to 18 months ago
 
-### retention_month_18
+## retention_month_18
 % of families completing 18+ months
 
 * **measure** #14d; **pd**: 5
 * **numerator**: *N* of families whose 1st HV was 18+ months of visits
 * **denominator**: *N* of families whose 1st HV was 18 to 24 months ago
 
-### disenrolled_addressable
+## disenrolled_addressable
 % of families that disenrolled from the program for 'addressable' reasons
 
 * **measure** #17; **pd**: 5
@@ -167,7 +165,7 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 * **denominator**: *N* of families who disenrolled from the home visiting program
 * **note**: Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
 
-### inquire_development
+## inquire_development
 % of families ask about child development
 
 * **measure** #18; **pd**: ?
@@ -175,13 +173,15 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 * **denominator**: *N* of visits w/ child 0+ days old
 * **note**: ETO item needs a third option “did not ask parent” (visit touchpoint)
 
-### visit_successful
+## visit_successful
 % of visits considered 'succcessful'
 
 * **measure** #19; **pd**: 5
 * **note**: ?How should this be defined?
 
-## Static Table of Planned Measures
+# Tables
+
+## Planned Measures
 <?xml version="1.0" encoding="UTF-8"?>
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; text-align: right;">
  <thead>
@@ -330,7 +330,7 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 </tbody>
 </table>
 
-## Static Table of Proposed Measures
+## Proposed Measures
 <?xml version="1.0" encoding="UTF-8"?>
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; text-align: right;">
  <thead>
@@ -352,6 +352,8 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
   </tr>
 </tbody>
 </table>
+
+#Trees
 
 ## Static Tree
 
@@ -663,5 +665,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-17, 18:38 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-17, 18:41 -0500 in 3 seconds.
 

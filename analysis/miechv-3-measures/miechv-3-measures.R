@@ -61,7 +61,7 @@ display_attribute <- function( a, name, prefix=glue("* **{name}**: "), ending="\
 display_measure <- function( x ) {
   x %>%
     glue_data(
-      "### {.$title}\n",
+      "## {.$title}\n",
       "{format_symbols(.$description)}\n\n",
       "* **measure** #{.$measure_id}; **pd**: {.$driver_primary}\n",
       {display_attribute(., "numerator")},

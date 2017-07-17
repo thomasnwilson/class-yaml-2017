@@ -76,19 +76,21 @@ read_chunk("./analysis/miechv-3-measures/miechv-3-measures.R") #This allows knit
 
 ## Answered Questions
 
-# Display
-
-## Static list
+# List
 ```{r list-static, results='asis', echo=echo_chunks, message=message_chunks}
 ```
 
-## Static Table of Planned Measures
+# Tables
+
+## Planned Measures
 ```{r table-static-planned, echo=echo_chunks, message=message_chunks}
 ```
 
-## Static Table of Proposed Measures
+## Proposed Measures
 ```{r table-static-proposed, echo=echo_chunks, message=message_chunks}
 ```
+
+#Trees
 
 ## Static Tree
 ```{r tree-static, echo=echo_chunks, message=message_chunks}
