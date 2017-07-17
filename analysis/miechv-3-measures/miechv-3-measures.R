@@ -25,7 +25,7 @@ variables      <- c(
   "measure_id", "title", "description",
   "driver_primary",
   "numerator", "denominator", "definition",
-  "note"
+  "note", "status"
 )
 
 format_symbols <- function( x ) {
@@ -46,33 +46,9 @@ ds <- data.tree:::ToDataFrameTypeCol(dt, variables)
 
 # ---- tree-static --------------------------------------------------------------
 data.tree:::print.Node(dt, limit=NULL)
-print(dt, "measure_id", "title", "description", "driver_primary", "numerator", "denominator", "definition", "note", pruneMethod = "simple")
+print(dt, "measure_id", "title", "description", "driver_primary", "numerator", "denominator", "definition", "note", "status", pruneMethod = "simple")
 
 # print(dt)
-
-# ---- table-static ------------------------------------------------------------
-ds %>%
-  tibble::as_tibble() %>%
-  dplyr::select(-level_1, -level_2) %>%
-  dplyr::mutate(
-    title         = gsub("_", "<br/>", title),
-    title         = gsub("appropriateness", "appropri-<br/>ateness", title)
-  ) %>%
-  dplyr::mutate_at(
-    c("title", "description", "driver_primary", "numerator", "denominator", "definition", "note"),
-    format_symbols
-  ) %>%
-  knitr::kable(
-    col.names = gsub("_", " ", colnames(.)),
-    format    = "html",
-    escape    = F
-  ) %>%
-  kableExtra::kable_styling(
-    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
-    full_width        = F,
-    position          = "left"
-  )
-
 
 # ---- list-static -------------------------------------------------------------
 
@@ -104,6 +80,45 @@ l %>%
   purrr::map_chr(display_measure) %>%
   cat(sep="")
 
+
+# ---- table-static-planned ------------------------------------------------------------
+format_static_table <- function( d ) {
+  d %>%
+  dplyr::select(-level_1, -level_2) %>%
+  dplyr::mutate(
+    title         = gsub("_", "<br/>", title),
+    title         = gsub("appropriateness", "appropri-<br/>ateness", title)
+  ) %>%
+  dplyr::mutate_at(
+    c("title", "description", "driver_primary", "numerator", "denominator", "definition", "note"),
+    format_symbols
+  ) %>%
+  knitr::kable(
+    col.names = gsub("_", " ", colnames(.)),
+    format    = "html",
+    escape    = F
+  ) %>%
+  kableExtra::kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width        = F,
+    position          = "left"
+  )
+}
+ds %>%
+  tibble::as_tibble() %>%
+  dplyr::filter(status == "planned") %>%
+  dplyr::select(-status) %>%
+  format_static_table()
+
+
+
+# ---- table-static-proposed ---------------------------------------------------
+
+ds %>%
+  tibble::as_tibble() %>%
+  dplyr::filter(status == "proposed") %>%
+  dplyr::select(-status) %>%
+  format_static_table()
 
 # ---- tree-dynamic --------------------------------------------------------------
 # collapsibleTree::collapsibleTree(

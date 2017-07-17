@@ -1,7 +1,9 @@
-# MIECHV 3 Measures
+# Common Outcome Measures -Oklahoma MIECHV 3
 Date: `r Sys.Date()`  
 
-This report covers the planned outcomes for MIECHV 3
+This report covers the planned outcomes for MIECHV 3.
+
+Instructions:  Discuss the (a) usefulness, (b) feasibility, and (c) definitions of these proposed measures.  These ‘common’ measures will be derived from ETO and made available to providers weekly; no extra effort should be required. HV CoIIN  recommends that every site beginning to use these measures for the first time conduct a diagnostic analysis of their family engagement processes by reviewing all of these measures using 1-2 months of historical data (for example, look back at data from 3 months ago and 4 months ago).
 
 <!--  Set the working directory to the repository's base directory; this assumes the report is nested inside of two directories.-->
 
@@ -14,10 +16,6 @@ This report covers the planned outcomes for MIECHV 3
 
 <!-- Load packages, or at least verify they're available on the local machine.  Suppress the output when loading packages. --> 
 
-```
-Warning: replacing previous import 'scales::viridis_pal' by 'viridis::viridis_pal' when loading
-'DiagrammeR'
-```
 
 <!-- Load any global functions and variables declared in the R file.  Suppress the output. --> 
 
@@ -194,7 +192,15 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 * **denominator**: *N* of visits w/ child 0+ days old
 * **note**: ETO item needs a third option “did not ask parent” (visit touchpoint)
 
-## Static Table
+### visit_successful
+% of visits considered 'succcessful'
+
+* **measure** #19; **pd**: 5
+
+
+* **note**: ?How should this be defined?
+
+## Static Table of Planned Measures
 <?xml version="1.0" encoding="UTF-8"?>
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; text-align: right;">
  <thead>
@@ -403,6 +409,35 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 </tbody>
 </table>
 
+## Static Table of Proposed Measures
+<?xml version="1.0" encoding="UTF-8"?>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; text-align: right;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> measure id </th>
+   <th style="text-align:left;"> title </th>
+   <th style="text-align:left;"> description </th>
+   <th style="text-align:left;"> driver primary </th>
+   <th style="text-align:left;"> numerator </th>
+   <th style="text-align:left;"> denominator </th>
+   <th style="text-align:left;"> definition </th>
+   <th style="text-align:left;"> note </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 19 </td>
+   <td style="text-align:left;"> visit<br/>successful </td>
+   <td style="text-align:left;"> % of visits considered 'succcessful' </td>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> ?How should this be defined? </td>
+  </tr>
+</tbody>
+</table>
+
 ## Static Tree
 
 ```
@@ -426,7 +461,8 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 17     ¦--16
 18     ¦--17
 19     ¦--18
-20     °--19
+20     ¦--19
+21     °--20
 ```
 
 ```
@@ -450,7 +486,8 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 17     ¦--16        14c       retention_month_12
 18     ¦--17        14d       retention_month_18
 19     ¦--18         17  disenrolled_addressable
-20     °--19         18      inquire_development
+20     ¦--19         18      inquire_development
+21     °--20         19         visit_successful
                                                                              description
 1                                                                                       
 2                 % of families that received all of the expected home visits this month
@@ -472,6 +509,7 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 18                                                   % of families completing 18+ months
 19             % of families that disenrolled from the program for 'addressable' reasons
 20                                             % of families ask about child development
+21                                                  % of visits considered 'succcessful'
    driver_primary
 1                
 2       SMART Aim
@@ -493,6 +531,7 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 18              5
 19              5
 20              ?
+21              5
                                                                                                                                                                                               numerator
 1                                                                                                                                                                                                      
 2                                                                                                                       N of enrolled families that received all of the expected home visits this month
@@ -514,6 +553,7 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 18                                                                                                                                                  N of families whose 1st HV was 18+ months of visits
 19                                                                                                                                              N of families who disenrolled for ‘addressable’ reasons
 20                                                                                                               N of visits that provider asked if parent has concerns about the development of child.
+21                                                                                                                                                                                                     
                                                                          denominator
 1                                                                                   
 2  N enrolled families not on creative outreach, alternate visit schedule or level X
@@ -535,6 +575,7 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 18                                N of families whose 1st HV was 18 to 24 months ago
 19                      N of families who disenrolled from the home visiting program
 20                                                  N of visits w/ child 0+ days old
+21                                                                                  
                                                                                           definition
 1                                                                                                   
 2                                                                                                   
@@ -556,6 +597,7 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 18                                                                                                  
 19                                                                                                  
 20                                                                                                  
+21                                                                                                  
                                                                                                                       note
 1                                                                                                                         
 2                                                                                                                         
@@ -577,6 +619,29 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 18                                                                                                                        
 19                                  Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
 20                                                   ETO item needs a third option “did not ask parent” (visit touchpoint)
+21                                                                                            ?How should this be defined?
+     status
+1          
+2   planned
+3   planned
+4   planned
+5   planned
+6   planned
+7   planned
+8   planned
+9   planned
+10  planned
+11  planned
+12  planned
+13  planned
+14  planned
+15  planned
+16  planned
+17  planned
+18  planned
+19  planned
+20  planned
+21 proposed
 ```
 
 ## Dynamic Tree
@@ -634,6 +699,7 @@ Packages -----------------------------------------------------------------------
  grid              3.4.1      2017-07-08 local                                
  gridExtra         2.2.1      2016-02-29 CRAN (R 3.4.1)                       
  gtable            0.2.0      2016-02-26 CRAN (R 3.4.1)                       
+ highr             0.6        2016-05-09 CRAN (R 3.4.1)                       
  hms               0.3        2016-11-22 CRAN (R 3.4.1)                       
  htmltools         0.3.6      2017-04-28 CRAN (R 3.4.0)                       
  htmlwidgets       0.9        2017-07-11 Github (ramnathv/htmlwidgets@6f4101d)
@@ -682,5 +748,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-17, 13:23 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-17, 14:54 -0500 in 2 seconds.
 

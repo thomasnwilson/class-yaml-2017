@@ -1,5 +1,5 @@
 ---
-title: MIECHV 3 Measures
+title: Common Outcome Measures -Oklahoma MIECHV 3
 date: "Date: `r Sys.Date()`"
 output:
   html_document:
@@ -9,7 +9,9 @@ output:
     number_sections: true
 ---
 
-This report covers the planned outcomes for MIECHV 3
+This report covers the planned outcomes for MIECHV 3.
+
+Instructions:  Discuss the (a) usefulness, (b) feasibility, and (c) definitions of these proposed measures.  These ‘common’ measures will be derived from ETO and made available to providers weekly; no extra effort should be required. HV CoIIN  recommends that every site beginning to use these measures for the first time conduct a diagnostic analysis of their family engagement processes by reviewing all of these measures using 1-2 months of historical data (for example, look back at data from 3 months ago and 4 months ago).
 
 <!--  Set the working directory to the repository's base directory; this assumes the report is nested inside of two directories.-->
 ```{r, echo=F, message=F} 
@@ -44,7 +46,7 @@ read_chunk("./analysis/miechv-3-measures/miechv-3-measures.R") #This allows knit
 ```
 
 <!-- Load packages, or at least verify they're available on the local machine.  Suppress the output when loading packages. --> 
-```{r load-packages, echo=echo_chunks, message=message_chunks}
+```{r load-packages, echo=echo_chunks, message=message_chunks, warning=F}
 ```
 
 <!-- Load any global functions and variables declared in the R file.  Suppress the output. --> 
@@ -80,8 +82,12 @@ read_chunk("./analysis/miechv-3-measures/miechv-3-measures.R") #This allows knit
 ```{r list-static, results='asis', echo=echo_chunks, message=message_chunks}
 ```
 
-## Static Table
-```{r table-static, echo=echo_chunks, message=message_chunks}
+## Static Table of Planned Measures
+```{r table-static-planned, echo=echo_chunks, message=message_chunks}
+```
+
+## Static Table of Proposed Measures
+```{r table-static-proposed, echo=echo_chunks, message=message_chunks}
 ```
 
 ## Static Tree

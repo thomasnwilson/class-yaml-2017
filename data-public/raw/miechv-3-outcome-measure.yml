@@ -5,6 +5,7 @@
   driver_primary: SMART Aim
   numerator: N of enrolled families that received all of the expected home visits this month
   denominator: N enrolled families not on creative outreach, alternate visit schedule or level X
+  status: planned
 -
   measure_id: 2
   title: capacity_served
@@ -12,6 +13,7 @@
   driver_primary: 3
   numerator: Current caseload
   denominator: Expected service capacity
+  status: planned
 -
   measure_id: 3
   title: capacity_filled
@@ -19,6 +21,7 @@
   driver_primary: 3
   numerator: N of families enrolled this month
   denominator: Available service capacity at beginning of month
+  status: planned
 -
   measure_id: 4
   title: referral_suitability
@@ -26,6 +29,7 @@
   driver_primary: 3
   numerator: N of referrals received this month
   denominator: available service capacity
+  status: planned
 -
   measure_id: 5
   title: referral_contacted
@@ -33,6 +37,7 @@
   driver_primary: 3
   numerator: N of families referred this month that were contacted
   denominator: N of families referred this month that attempted to contact
+  status: planned
 -
   measure_id: 6
   title: referral_appropriateness
@@ -40,6 +45,7 @@
   driver_primary: 3
   numerator: N of referrals this month that were appropriate
   denominator: N of families referred this month that were contacted
+  status: planned
 -
   measure_id: 7a
   title: contact_any
@@ -47,6 +53,7 @@
   driver_primary: 3
   numerator: N of families contacted that received any contact within 48 hours
   denominator: N of families referred this month that were contacted
+  status: planned
 -
   measure_id: 7b
   title: contact_face
@@ -54,6 +61,7 @@
   driver_primary: 3
   numerator: N of families contacted that received a first face-to-face contact
   denominator: N of families referred this month that were contacted
+  status: planned
 -
   measure_id: 8
   title: contact_lag
@@ -61,6 +69,7 @@
   driver_primary: 3
   numerator: N of families referred this month that were contacted and offered home visiting services
   denominator: N of families referred this month that were contacted
+  status: planned
 -
   measure_id: 10
   title: enrolled
@@ -68,6 +77,7 @@
   driver_primary: 3
   numerator: N of families referred this month that were offered home visiting services that enrolled in home visiting services
   denominator: N of families referred this month with a completed referral
+  status: planned
 -
   measure_id: 11
   title: enroll_lag
@@ -75,6 +85,7 @@
   driver_primary: 3
   definition: Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …
   note: "Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ..."
+  status: planned
 -
   measure_id: 12
   title: visit_drought
@@ -82,6 +93,7 @@
   driver_primary: 4
   numerator: Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits
   denominator: N of families for whom weekly or biweekly visits are expected
+  status: planned
 -
   measure_id: 13
   title: visit_schedule_alternate
@@ -89,6 +101,7 @@
   driver_primary: 4
   numerator: N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
   denominator: N of enrolled families
+  status: planned
 -
   measure_id: 14a
   title: retention_month_03
@@ -96,6 +109,7 @@
   driver_primary: 5
   numerator: N of families who completed 3+ months of visits
   denominator: N of families whose 1st HV was 3 to 6 months ago
+  status: planned
 -
   measure_id: 14b
   title: retention_month_06
@@ -103,6 +117,7 @@
   driver_primary: 5
   numerator: N of families who completed 6+ months of visits
   denominator: N of families whose 1st HV was 6 to 12 months ago
+  status: planned
 -
   measure_id: 14c
   title: retention_month_12
@@ -110,6 +125,7 @@
   driver_primary: 5
   numerator: N of families whose 1st HV was 12+ months of visits
   denominator: N of families whose 1st HV was 12 to 18 months ago
+  status: planned
 -
   measure_id: 14d
   title: retention_month_18
@@ -117,6 +133,7 @@
   driver_primary: 5
   numerator: N of families whose 1st HV was 18+ months of visits
   denominator: N of families whose 1st HV was 18 to 24 months ago
+  status: planned
 -
   measure_id: 17
   title: disenrolled_addressable
@@ -125,6 +142,7 @@
   numerator: N of families who disenrolled for ‘addressable’ reasons
   denominator: N of families who disenrolled from the home visiting program
   note: Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
+  status: planned
 -
   measure_id: 18
   title: inquire_development
@@ -133,3 +151,11 @@
   numerator: N of visits that provider asked if parent has concerns about the development of child.
   denominator: N of visits w/ child 0+ days old
   note: ETO item needs a third option “did not ask parent” (visit touchpoint)
+  status: planned
+-
+  measure_id: 19
+  title: visit_successful
+  driver_primary: 5
+  description: "% of visits considered 'succcessful'"
+  note: ?How should this be defined?
+  status: proposed
