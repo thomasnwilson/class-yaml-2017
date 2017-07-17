@@ -90,8 +90,27 @@ format_static_table <- function( d ) {
     title         = gsub("_", "<br/>", title),
     title         = gsub("appropriateness", "appropri-<br/>ateness", title)
   ) %>%
+  dplyr::mutate(
+    equation = dplyr::case_when(
+      !is.na(.$definition)    ~ definition,
+      !is.na(.$numerator)     ~ as.character(glue("**numerator**: {.$numerator}<br/>**denominator**: {.$denominator}")),
+      TRUE                    ~ NA_character_
+    )
+  ) %>%
+  # colnames() %>% dput()
+  dplyr::select(
+    id              = measure_id,
+    title,
+    description,
+    equation,
+    driver_primary,
+    # numerator,
+    # denominator,
+    # definition,
+    note
+  ) %>%
   dplyr::mutate_at(
-    c("title", "description", "driver_primary", "numerator", "denominator", "definition", "note"),
+    c("title", "description", "driver_primary", "equation", "note"),
     format_symbols
   ) %>%
   knitr::kable(
