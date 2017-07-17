@@ -46,8 +46,8 @@ Warning: replacing previous import 'scales::viridis_pal' by 'viridis::viridis_pa
 % of families that received all of the expected home visits this month
 
 * **measure** #1; **pd**: SMART Aim
-* **numerator**: N of enrolled families that received all of the expected home visits this month
-* **denominator**: N enrolled families not on creative outreach, alternate visit schedule or level X
+* **numerator**: *N* of enrolled families that received all of the expected home visits this month
+* **denominator**: *N* enrolled families not on creative outreach, alternate visit schedule or level X
 
 
 ### capacity_served
@@ -62,7 +62,7 @@ Warning: replacing previous import 'scales::viridis_pal' by 'viridis::viridis_pa
 % of available capacity that was filled this month
 
 * **measure** #3; **pd**: 3
-* **numerator**: N of families enrolled this month
+* **numerator**: *N* of families enrolled this month
 * **denominator**: Available service capacity at beginning of month
 
 
@@ -70,7 +70,7 @@ Warning: replacing previous import 'scales::viridis_pal' by 'viridis::viridis_pa
 Ratio of suitable referrals to available service capacity
 
 * **measure** #4; **pd**: 3
-* **numerator**: N of referrals received this month
+* **numerator**: *N* of referrals received this month
 * **denominator**: available service capacity
 
 
@@ -78,52 +78,52 @@ Ratio of suitable referrals to available service capacity
 % of families contacted, among those attempted to contact
 
 * **measure** #5; **pd**: 3
-* **numerator**: N of families referred this month that were contacted
-* **denominator**: N of families referred this month that attempted to contact
+* **numerator**: *N* of families referred this month that were contacted
+* **denominator**: *N* of families referred this month that attempted to contact
 
 
 ### referral_appropriateness
 % of referrals that were appropriate
 
 * **measure** #6; **pd**: 3
-* **numerator**: N of referrals this month that were appropriate
-* **denominator**: N of families referred this month that were contacted
+* **numerator**: *N* of referrals this month that were appropriate
+* **denominator**: *N* of families referred this month that were contacted
 
 
 ### contact_any
 % of referred families contacted who received any contact within 48 hours
 
 * **measure** #7a; **pd**: 3
-* **numerator**: N of families contacted that received any contact within 48 hours
-* **denominator**: N of families referred this month that were contacted
+* **numerator**: *N* of families contacted that received any contact within 48 hours
+* **denominator**: *N* of families referred this month that were contacted
 
 
 ### contact_face
 % of referred families contacted who received a face-to-face contact
 
 * **measure** #7b; **pd**: 3
-* **numerator**: N of families contacted that received a first face-to-face contact
-* **denominator**: N of families referred this month that were contacted
+* **numerator**: *N* of families contacted that received a first face-to-face contact
+* **denominator**: *N* of families referred this month that were contacted
 
 
 ### contact_lag
-Average N of days from referral to 1st face-to-face contact
+Average *N* of days from referral to 1st face-to-face contact
 
 * **measure** #8; **pd**: 3
-* **numerator**: N of families referred this month that were contacted and offered home visiting services
-* **denominator**: N of families referred this month that were contacted
+* **numerator**: *N* of families referred this month that were contacted and offered home visiting services
+* **denominator**: *N* of families referred this month that were contacted
 
 
 ### enrolled
 % of families offered home visiting services that enrolled in home visiting services
 
 * **measure** #10; **pd**: 3
-* **numerator**: N of families referred this month that were offered home visiting services that enrolled in home visiting services
-* **denominator**: N of families referred this month with a completed referral
+* **numerator**: *N* of families referred this month that were offered home visiting services that enrolled in home visiting services
+* **denominator**: *N* of families referred this month with a completed referral
 
 
 ### enroll_lag
-Among families enrolled, Average N of days between receipt of referral and enrollment
+Among families enrolled, Average *N* of days between receipt of referral and enrollment
 
 * **measure** #11; **pd**: 3
 
@@ -134,64 +134,64 @@ Among families enrolled, Average N of days between receipt of referral and enrol
 % of families without a 21+ day drought between visits
 
 * **measure** #12; **pd**: 4
-* **numerator**: Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits
-* **denominator**: N of families for whom weekly or biweekly visits are expected
+* **numerator**: Among families for whom weekly or biweekly visits are expected, *N* without 21+ days between visits
+* **denominator**: *N* of families for whom weekly or biweekly visits are expected
 
 
 ### visit_schedule_alternate
 % of families on alternate visit schedule
 
 * **measure** #13; **pd**: 4
-* **numerator**: N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
-* **denominator**: N of enrolled families
+* **numerator**: *N* of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
+* **denominator**: *N* of enrolled families
 
 
 ### retention_month_03
 % of families completing 3+ months
 
 * **measure** #14a; **pd**: 5
-* **numerator**: N of families who completed 3+ months of visits
-* **denominator**: N of families whose 1st HV was 3 to 6 months ago
+* **numerator**: *N* of families who completed 3+ months of visits
+* **denominator**: *N* of families whose 1st HV was 3 to 6 months ago
 
 
 ### retention_month_06
 % of families completing 6+ months
 
 * **measure** #14b; **pd**: 5
-* **numerator**: N of families who completed 6+ months of visits
-* **denominator**: N of families whose 1st HV was 6 to 12 months ago
+* **numerator**: *N* of families who completed 6+ months of visits
+* **denominator**: *N* of families whose 1st HV was 6 to 12 months ago
 
 
 ### retention_month_12
 % of families completing 12+ months
 
 * **measure** #14c; **pd**: 5
-* **numerator**: N of families whose 1st HV was 12+ months of visits
-* **denominator**: N of families whose 1st HV was 12 to 18 months ago
+* **numerator**: *N* of families whose 1st HV was 12+ months of visits
+* **denominator**: *N* of families whose 1st HV was 12 to 18 months ago
 
 
 ### retention_month_18
 % of families completing 18+ months
 
 * **measure** #14d; **pd**: 5
-* **numerator**: N of families whose 1st HV was 18+ months of visits
-* **denominator**: N of families whose 1st HV was 18 to 24 months ago
+* **numerator**: *N* of families whose 1st HV was 18+ months of visits
+* **denominator**: *N* of families whose 1st HV was 18 to 24 months ago
 
 
 ### disenrolled_addressable
 % of families that disenrolled from the program for 'addressable' reasons
 
 * **measure** #17; **pd**: 5
-* **numerator**: N of families who disenrolled for ‘addressable’ reasons
-* **denominator**: N of families who disenrolled from the home visiting program
+* **numerator**: *N* of families who disenrolled for ‘addressable’ reasons
+* **denominator**: *N* of families who disenrolled from the home visiting program
 * **note**: Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
 
 ### inquire_development
 % of families ask about child development
 
 * **measure** #18; **pd**: ?
-* **numerator**: N of visits that provider asked if parent has concerns about the development of child.
-* **denominator**: N of visits w/ child 0+ days old
+* **numerator**: *N* of visits that provider asked if parent has concerns about the development of child.
+* **denominator**: *N* of visits w/ child 0+ days old
 * **note**: ETO item needs a third option “did not ask parent” (visit touchpoint)
 
 ## Static Table
@@ -416,7 +416,7 @@ Session info -------------------------------------------------------------------
  language en_US                       
  collate  en_US.UTF-8                 
  tz       America/Chicago             
- date     2017-07-14                  
+ date     2017-07-17                  
 ```
 
 ```
@@ -492,5 +492,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-14, 10:26 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-17, 12:57 -0500 in 2 seconds.
 

@@ -49,19 +49,25 @@ ds %>%
 
 
 # ---- list-static -------------------------------------------------------------
+format_symbols <- function( x ) {
+  x <- gsub("\\bN\\b", "*N*", x)
+
+  return( x )
+}
 display_attribute <- function( a, name, prefix=glue("* **{name}**: ")) {
   # browser()
   if( !is.null(a[[name]]) ) {
-    glue("{prefix}{value}\n", value=a[[name]])
+    value <- format_symbols(a[[name]])
+    glue("{prefix}{value}\n", value=value)
   } else {
-    ""
+    character(1)
   }
 }
 display_measure <- function( x ) {
   x %>%
     glue_data(
       "### {.$title}",
-      "{.$description}\n",
+      "{format_symbols(.$description)}\n",
       "* **measure** #{.$measure_id}; **pd**: {.$driver_primary}",
       {display_attribute(., "numerator")},
       {display_attribute(., "denominator")},
