@@ -28,6 +28,13 @@ variables      <- c(
   "note"
 )
 
+format_symbols <- function( x ) {
+  x <- dplyr::if_else(is.na(x), "--", x)
+  x <- gsub("\\bN\\b", "*N*", x)
+
+  return( x )
+}
+
 # ---- load-data ---------------------------------------------------------------
 l <- yaml::yaml.load_file(path_input)
 
@@ -48,11 +55,17 @@ ds %>%
   tibble::as_tibble() %>%
   dplyr::select(-level_1, -level_2) %>%
   dplyr::mutate(
-    title         = gsub("_", " ", title)
+    title         = gsub("_", "<br/>", title),
+    title         = gsub("appropriateness", "appropri-<br/>ateness", title)
+  ) %>%
+  dplyr::mutate_at(
+    c("title", "description", "driver_primary", "numerator", "denominator", "definition", "note"),
+    format_symbols
   ) %>%
   knitr::kable(
     col.names = gsub("_", " ", colnames(.)),
-    format    = "html"
+    format    = "html",
+    escape    = F
   ) %>%
   kableExtra::kable_styling(
     bootstrap_options = c("striped", "hover", "condensed", "responsive"),
@@ -62,11 +75,7 @@ ds %>%
 
 
 # ---- list-static -------------------------------------------------------------
-format_symbols <- function( x ) {
-  x <- gsub("\\bN\\b", "*N*", x)
 
-  return( x )
-}
 display_attribute <- function( a, name, prefix=glue("* **{name}**: ")) {
   # browser()
   if( !is.null(a[[name]]) ) {

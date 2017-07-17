@@ -212,192 +212,192 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 <tbody>
   <tr>
    <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> visits all </td>
+   <td style="text-align:left;"> visits<br/>all </td>
    <td style="text-align:left;"> % of families that received all of the expected home visits this month </td>
    <td style="text-align:left;"> SMART Aim </td>
-   <td style="text-align:left;"> N of enrolled families that received all of the expected home visits this month </td>
-   <td style="text-align:left;"> N enrolled families not on creative outreach, alternate visit schedule or level X </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of enrolled families that received all of the expected home visits this month </td>
+   <td style="text-align:left;"> *N* enrolled families not on creative outreach, alternate visit schedule or level X </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> capacity served </td>
+   <td style="text-align:left;"> capacity<br/>served </td>
    <td style="text-align:left;"> % total capacity served </td>
    <td style="text-align:left;"> 3 </td>
    <td style="text-align:left;"> Current caseload </td>
    <td style="text-align:left;"> Expected service capacity </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> capacity filled </td>
+   <td style="text-align:left;"> capacity<br/>filled </td>
    <td style="text-align:left;"> % of available capacity that was filled this month </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> N of families enrolled this month </td>
+   <td style="text-align:left;"> *N* of families enrolled this month </td>
    <td style="text-align:left;"> Available service capacity at beginning of month </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> referral suitability </td>
+   <td style="text-align:left;"> referral<br/>suitability </td>
    <td style="text-align:left;"> Ratio of suitable referrals to available service capacity </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> N of referrals received this month </td>
+   <td style="text-align:left;"> *N* of referrals received this month </td>
    <td style="text-align:left;"> available service capacity </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> referral contacted </td>
+   <td style="text-align:left;"> referral<br/>contacted </td>
    <td style="text-align:left;"> % of families contacted, among those attempted to contact </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> N of families referred this month that were contacted </td>
-   <td style="text-align:left;"> N of families referred this month that attempted to contact </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families referred this month that were contacted </td>
+   <td style="text-align:left;"> *N* of families referred this month that attempted to contact </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> referral appropriateness </td>
+   <td style="text-align:left;"> referral<br/>appropri-<br/>ateness </td>
    <td style="text-align:left;"> % of referrals that were appropriate </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> N of referrals this month that were appropriate </td>
-   <td style="text-align:left;"> N of families referred this month that were contacted </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of referrals this month that were appropriate </td>
+   <td style="text-align:left;"> *N* of families referred this month that were contacted </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 7a </td>
-   <td style="text-align:left;"> contact any </td>
+   <td style="text-align:left;"> contact<br/>any </td>
    <td style="text-align:left;"> % of referred families contacted who received any contact within 48 hours </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> N of families contacted that received any contact within 48 hours </td>
-   <td style="text-align:left;"> N of families referred this month that were contacted </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families contacted that received any contact within 48 hours </td>
+   <td style="text-align:left;"> *N* of families referred this month that were contacted </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 7b </td>
-   <td style="text-align:left;"> contact face </td>
+   <td style="text-align:left;"> contact<br/>face </td>
    <td style="text-align:left;"> % of referred families contacted who received a face-to-face contact </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> N of families contacted that received a first face-to-face contact </td>
-   <td style="text-align:left;"> N of families referred this month that were contacted </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families contacted that received a first face-to-face contact </td>
+   <td style="text-align:left;"> *N* of families referred this month that were contacted </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> contact lag </td>
-   <td style="text-align:left;"> Average N of days from referral to 1st face-to-face contact </td>
+   <td style="text-align:left;"> contact<br/>lag </td>
+   <td style="text-align:left;"> Average *N* of days from referral to 1st face-to-face contact </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> N of families referred this month that were contacted and offered home visiting services </td>
-   <td style="text-align:left;"> N of families referred this month that were contacted </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families referred this month that were contacted and offered home visiting services </td>
+   <td style="text-align:left;"> *N* of families referred this month that were contacted </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 10 </td>
    <td style="text-align:left;"> enrolled </td>
    <td style="text-align:left;"> % of families offered home visiting services that enrolled in home visiting services </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> N of families referred this month that were offered home visiting services that enrolled in home visiting services </td>
-   <td style="text-align:left;"> N of families referred this month with a completed referral </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families referred this month that were offered home visiting services that enrolled in home visiting services </td>
+   <td style="text-align:left;"> *N* of families referred this month with a completed referral </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 11 </td>
-   <td style="text-align:left;"> enroll lag </td>
-   <td style="text-align:left;"> Among families enrolled, Average N of days between receipt of referral and enrollment </td>
+   <td style="text-align:left;"> enroll<br/>lag </td>
+   <td style="text-align:left;"> Among families enrolled, Average *N* of days between receipt of referral and enrollment </td>
    <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
    <td style="text-align:left;"> Since there could be different valid definitions of “referral date”, this may need to be measures </td>
    <td style="text-align:left;"> Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ... </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 12 </td>
-   <td style="text-align:left;"> visit drought </td>
+   <td style="text-align:left;"> visit<br/>drought </td>
    <td style="text-align:left;"> % of families without a 21+ day drought between visits </td>
    <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits </td>
-   <td style="text-align:left;"> N of families for whom weekly or biweekly visits are expected </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Among families for whom weekly or biweekly visits are expected, *N* without 21+ days between visits </td>
+   <td style="text-align:left;"> *N* of families for whom weekly or biweekly visits are expected </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 13 </td>
-   <td style="text-align:left;"> visit schedule alternate </td>
+   <td style="text-align:left;"> visit<br/>schedule<br/>alternate </td>
    <td style="text-align:left;"> % of families on alternate visit schedule </td>
    <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc. </td>
-   <td style="text-align:left;"> N of enrolled families </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc. </td>
+   <td style="text-align:left;"> *N* of enrolled families </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 14a </td>
-   <td style="text-align:left;"> retention month 03 </td>
+   <td style="text-align:left;"> retention<br/>month<br/>03 </td>
    <td style="text-align:left;"> % of families completing 3+ months </td>
    <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> N of families who completed 3+ months of visits </td>
-   <td style="text-align:left;"> N of families whose 1st HV was 3 to 6 months ago </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families who completed 3+ months of visits </td>
+   <td style="text-align:left;"> *N* of families whose 1st HV was 3 to 6 months ago </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 14b </td>
-   <td style="text-align:left;"> retention month 06 </td>
+   <td style="text-align:left;"> retention<br/>month<br/>06 </td>
    <td style="text-align:left;"> % of families completing 6+ months </td>
    <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> N of families who completed 6+ months of visits </td>
-   <td style="text-align:left;"> N of families whose 1st HV was 6 to 12 months ago </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families who completed 6+ months of visits </td>
+   <td style="text-align:left;"> *N* of families whose 1st HV was 6 to 12 months ago </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 14c </td>
-   <td style="text-align:left;"> retention month 12 </td>
+   <td style="text-align:left;"> retention<br/>month<br/>12 </td>
    <td style="text-align:left;"> % of families completing 12+ months </td>
    <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> N of families whose 1st HV was 12+ months of visits </td>
-   <td style="text-align:left;"> N of families whose 1st HV was 12 to 18 months ago </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families whose 1st HV was 12+ months of visits </td>
+   <td style="text-align:left;"> *N* of families whose 1st HV was 12 to 18 months ago </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 14d </td>
-   <td style="text-align:left;"> retention month 18 </td>
+   <td style="text-align:left;"> retention<br/>month<br/>18 </td>
    <td style="text-align:left;"> % of families completing 18+ months </td>
    <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> N of families whose 1st HV was 18+ months of visits </td>
-   <td style="text-align:left;"> N of families whose 1st HV was 18 to 24 months ago </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families whose 1st HV was 18+ months of visits </td>
+   <td style="text-align:left;"> *N* of families whose 1st HV was 18 to 24 months ago </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 17 </td>
-   <td style="text-align:left;"> disenrolled addressable </td>
+   <td style="text-align:left;"> disenrolled<br/>addressable </td>
    <td style="text-align:left;"> % of families that disenrolled from the program for 'addressable' reasons </td>
    <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> N of families who disenrolled for ‘addressable’ reasons </td>
-   <td style="text-align:left;"> N of families who disenrolled from the home visiting program </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of families who disenrolled for ‘addressable’ reasons </td>
+   <td style="text-align:left;"> *N* of families who disenrolled from the home visiting program </td>
+   <td style="text-align:left;"> -- </td>
    <td style="text-align:left;"> Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 18 </td>
-   <td style="text-align:left;"> inquire development </td>
+   <td style="text-align:left;"> inquire<br/>development </td>
    <td style="text-align:left;"> % of families ask about child development </td>
    <td style="text-align:left;"> ? </td>
-   <td style="text-align:left;"> N of visits that provider asked if parent has concerns about the development of child. </td>
-   <td style="text-align:left;"> N of visits w/ child 0+ days old </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> *N* of visits that provider asked if parent has concerns about the development of child. </td>
+   <td style="text-align:left;"> *N* of visits w/ child 0+ days old </td>
+   <td style="text-align:left;"> -- </td>
    <td style="text-align:left;"> ETO item needs a third option “did not ask parent” (visit touchpoint) </td>
   </tr>
 </tbody>
@@ -634,7 +634,6 @@ Packages -----------------------------------------------------------------------
  grid              3.4.1      2017-07-08 local                                
  gridExtra         2.2.1      2016-02-29 CRAN (R 3.4.1)                       
  gtable            0.2.0      2016-02-26 CRAN (R 3.4.1)                       
- highr             0.6        2016-05-09 CRAN (R 3.4.1)                       
  hms               0.3        2016-11-22 CRAN (R 3.4.1)                       
  htmltools         0.3.6      2017-04-28 CRAN (R 3.4.0)                       
  htmlwidgets       0.9        2017-07-11 Github (ramnathv/htmlwidgets@6f4101d)
@@ -683,5 +682,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-17, 13:10 -0500 in 2 seconds.
+Report rendered by wibeasley at 2017-07-17, 13:23 -0500 in 2 seconds.
 
