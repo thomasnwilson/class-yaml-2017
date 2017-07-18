@@ -97,7 +97,7 @@ read_chunk("./analysis/miechv-3-measures/miechv-3-measures.R") #This allows knit
 ```
 
 ## Dynamic Tree
-```{r tree-dynamic, echo=echo_chunks, message=message_chunks}
+```{r tree-dynamic, echo=echo_chunks, message=message_chunks, fig.width=12}
 ```
 
 

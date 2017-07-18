@@ -135,10 +135,36 @@ ds %>%
   format_static_table()
 
 # ---- tree-dynamic --------------------------------------------------------------
-# collapsibleTree::collapsibleTree(
-#   ds,
-#   hierarchy = c("objective_name")
-# )
+ds_tree <- ds %>%
+  dplyr::select(
+    # navigation nodes
+    driver_primary,
+    measure_id,
+    title,
+
+    # terminal nodes
+    definition,
+    numerator,
+    denominator
+  ) %>%
+  dplyr::mutate(
+    parent_measure_id = as.integer(gsub("^(\\d{1,3})\\w*$", "\\1", measure_id))
+  ) %>%
+  tidyr::gather(key, value, -driver_primary, -parent_measure_id, -measure_id, -title) %>%
+  dplyr::mutate(
+    title         = glue("#{.$measure_id}: {.$title}"),
+    key_value     = glue("**{.$key}**: {.$value}")#,
+    # key_value     = stringi::stri_wrap(key_value, simplify = T)
+    # key_value     = substr(key_value, 1, 80)
+    # key_value     = purrr::map_chr(key_value, function(x)  paste(stringi::stri_wrap(x, 10), collapse="-"))
+  ) %>%
+  dplyr::select(-key, -value, -measure_id)
+
+ds_tree %>%
+  collapsibleTree::collapsibleTree(
+    c("driver_primary",  "title", "key_value"), #"parent_measure_id",
+    linkLength = 100
+  )
 
 # ---- verify-values -----------------------------------------------------------
 # checkmate::assert_integer(ds$row_id           , lower=0  , any.missing=FALSE, unique=FALSE)
