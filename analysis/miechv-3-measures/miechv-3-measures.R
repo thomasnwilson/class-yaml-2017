@@ -145,6 +145,8 @@ ds_tree <- ds %>%
     parent_measure_id = as.integer(gsub("^(\\d{1,3})\\w*$", "\\1", measure_id))
   ) %>%
   tidyr::gather(key, value, -driver_primary, -parent_measure_id, -measure_id, -title) %>%
+  tidyr::drop_na(value) %>%
+  dplyr::arrange(driver_primary, parent_measure_id, measure_id) %>%
   dplyr::mutate(
     title         = glue("#{.$measure_id}: {.$title}"),
     key_value     = glue("**{.$key}**: {.$value}")#,
