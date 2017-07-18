@@ -355,215 +355,13 @@ Among families enrolled, Average *N* of days between receipt of referral and enr
 
 #Trees
 
-## Static Tree
-
-```
-   levelName
-1     Root  
-2      ¦--1 
-3      ¦--2 
-4      ¦--3 
-5      ¦--4 
-6      ¦--5 
-7      ¦--6 
-8      ¦--7 
-9      ¦--8 
-10     ¦--9 
-11     ¦--10
-12     ¦--11
-13     ¦--12
-14     ¦--13
-15     ¦--14
-16     ¦--15
-17     ¦--16
-18     ¦--17
-19     ¦--18
-20     ¦--19
-21     °--20
-```
-
-```
-   levelName measure_id                    title
-1     Root                                      
-2      ¦--1           1               visits_all
-3      ¦--2           2          capacity_served
-4      ¦--3           3          capacity_filled
-5      ¦--4           4     referral_suitability
-6      ¦--5           5       referral_contacted
-7      ¦--6           6 referral_appropriateness
-8      ¦--7          7a              contact_any
-9      ¦--8          7b             contact_face
-10     ¦--9           8              contact_lag
-11     ¦--10         10                 enrolled
-12     ¦--11         11               enroll_lag
-13     ¦--12         12            visit_drought
-14     ¦--13         13 visit_schedule_alternate
-15     ¦--14        14a       retention_month_03
-16     ¦--15        14b       retention_month_06
-17     ¦--16        14c       retention_month_12
-18     ¦--17        14d       retention_month_18
-19     ¦--18         17  disenrolled_addressable
-20     ¦--19         18      inquire_development
-21     °--20         19         visit_successful
-                                                                             description
-1                                                                                       
-2                 % of families that received all of the expected home visits this month
-3                                                                % total capacity served
-4                                     % of available capacity that was filled this month
-5                              Ratio of suitable referrals to available service capacity
-6                              % of families contacted, among those attempted to contact
-7                                                   % of referrals that were appropriate
-8              % of referred families contacted who received any contact within 48 hours
-9                   % of referred families contacted who received a face-to-face contact
-10                           Average N of days from referral to 1st face-to-face contact
-11  % of families offered home visiting services that enrolled in home visiting services
-12 Among families enrolled, Average N of days between receipt of referral and enrollment
-13                                % of families without a 21+ day drought between visits
-14                                             % of families on alternate visit schedule
-15                                                    % of families completing 3+ months
-16                                                    % of families completing 6+ months
-17                                                   % of families completing 12+ months
-18                                                   % of families completing 18+ months
-19             % of families that disenrolled from the program for 'addressable' reasons
-20                                             % of families ask about child development
-21                                                  % of visits considered 'succcessful'
-   driver_primary
-1                
-2       SMART Aim
-3               3
-4               3
-5               3
-6               3
-7               3
-8               3
-9               3
-10              3
-11              3
-12              3
-13              4
-14              4
-15              5
-16              5
-17              5
-18              5
-19              5
-20              ?
-21              5
-                                                                                                                                                                                              numerator
-1                                                                                                                                                                                                      
-2                                                                                                                       N of enrolled families that received all of the expected home visits this month
-3                                                                                                                                                                                      Current caseload
-4                                                                                                                                                                     N of families enrolled this month
-5                                                                                                                                                                    N of referrals received this month
-6                                                                                                                                                 N of families referred this month that were contacted
-7                                                                                                                                                       N of referrals this month that were appropriate
-8                                                                                                                                     N of families contacted that received any contact within 48 hours
-9                                                                                                                                    N of families contacted that received a first face-to-face contact
-10                                                                                                             N of families referred this month that were contacted and offered home visiting services
-11                                                                                   N of families referred this month that were offered home visiting services that enrolled in home visiting services
-12                                                                                                                                                                                                     
-13                                                                                                    Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits
-14 N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc.
-15                                                                                                                                                      N of families who completed 3+ months of visits
-16                                                                                                                                                      N of families who completed 6+ months of visits
-17                                                                                                                                                  N of families whose 1st HV was 12+ months of visits
-18                                                                                                                                                  N of families whose 1st HV was 18+ months of visits
-19                                                                                                                                              N of families who disenrolled for ‘addressable’ reasons
-20                                                                                                               N of visits that provider asked if parent has concerns about the development of child.
-21                                                                                                                                                                                                     
-                                                                         denominator
-1                                                                                   
-2  N enrolled families not on creative outreach, alternate visit schedule or level X
-3                                                          Expected service capacity
-4                                   Available service capacity at beginning of month
-5                                                         available service capacity
-6                        N of families referred this month that attempted to contact
-7                              N of families referred this month that were contacted
-8                              N of families referred this month that were contacted
-9                              N of families referred this month that were contacted
-10                             N of families referred this month that were contacted
-11                       N of families referred this month with a completed referral
-12                                                                                  
-13                     N of families for whom weekly or biweekly visits are expected
-14                                                            N of enrolled families
-15                                  N of families whose 1st HV was 3 to 6 months ago
-16                                 N of families whose 1st HV was 6 to 12 months ago
-17                                N of families whose 1st HV was 12 to 18 months ago
-18                                N of families whose 1st HV was 18 to 24 months ago
-19                      N of families who disenrolled from the home visiting program
-20                                                  N of visits w/ child 0+ days old
-21                                                                                  
-                                                                                                             definition
-1                                                                                                                      
-2                                                                                                                      
-3                                                                                                                      
-4                                                                                                                      
-5                                                                                                                      
-6                                                                                                                      
-7                                                                                                                      
-8                                                                                                                      
-9                                                                                                                      
-10                                                                                                                     
-11                                                                                                                     
-12 Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …
-13                                                                                                                     
-14                                                                                                                     
-15                                                                                                                     
-16                                                                                                                     
-17                                                                                                                     
-18                                                                                                                     
-19                                                                                                                     
-20                                                                                                                     
-21                                                                                                                     
-                                                                                                                      note
-1                                                                                                                         
-2                                                                                                                         
-3                                                                                                                         
-4                                                                                                                         
-5                                                                                                                         
-6                                                                                                                         
-7                                                                                                                         
-8                                                                                                                         
-9                                                                                                                         
-10                                                                                                                        
-11                                                                                                                        
-12 Possibly using date when client is: (a) entered into the system, (b) assigned to program, (c) assigned to provider, ...
-13                                                                                                                        
-14                                                                                                                        
-15                                                                                                                        
-16                                                                                                                        
-17                                                                                                                        
-18                                                                                                                        
-19                                  Help us define “addressable” along the lines of ‘legitimate’ or ‘valid’ or ‘justified’
-20                                                   ETO item needs a third option “did not ask parent” (visit touchpoint)
-21                                                                                            ?How should this be defined?
-     status
-1          
-2   planned
-3   planned
-4   planned
-5   planned
-6   planned
-7   planned
-8   planned
-9   planned
-10  planned
-11  planned
-12  planned
-13  planned
-14  planned
-15  planned
-16  planned
-17  planned
-18  planned
-19  planned
-20  planned
-21 proposed
-```
-
 ## Dynamic Tree
-<!--html_preserve--><div id="htmlwidget-dc4f77e2deff39543f87" style="width:1152px;height:384px;" class="collapsibleTree html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dc4f77e2deff39543f87">{"x":{"data":{"name":".","children":[{"name":"SMART Aim","children":[{"name":"#1: visits_all","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of enrolled families that received all of the expected home visits this month"},{"name":"**denominator**: N enrolled families not on creative outreach, alternate visit schedule or level X"}]}]},{"name":"3","children":[{"name":"#2: capacity_served","children":[{"name":"**definition**: NA"},{"name":"**numerator**: Current caseload"},{"name":"**denominator**: Expected service capacity"}]},{"name":"#3: capacity_filled","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families enrolled this month"},{"name":"**denominator**: Available service capacity at beginning of month"}]},{"name":"#4: referral_suitability","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of referrals received this month"},{"name":"**denominator**: available service capacity"}]},{"name":"#5: referral_contacted","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families referred this month that were contacted"},{"name":"**denominator**: N of families referred this month that attempted to contact"}]},{"name":"#6: referral_appropriateness","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of referrals this month that were appropriate"},{"name":"**denominator**: N of families referred this month that were contacted"}]},{"name":"#7a: contact_any","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families contacted that received any contact within 48 hours"},{"name":"**denominator**: N of families referred this month that were contacted"}]},{"name":"#7b: contact_face","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families contacted that received a first face-to-face contact"},{"name":"**denominator**: N of families referred this month that were contacted"}]},{"name":"#8: contact_lag","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families referred this month that were contacted and offered home visiting services"},{"name":"**denominator**: N of families referred this month that were contacted"}]},{"name":"#10: enrolled","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families referred this month that were offered home visiting services that enrolled in home visiting services"},{"name":"**denominator**: N of families referred this month with a completed referral"}]},{"name":"#11: enroll_lag","children":[{"name":"**definition**: Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …"},{"name":"**numerator**: NA"},{"name":"**denominator**: NA"}]}]},{"name":"4","children":[{"name":"#12: visit_drought","children":[{"name":"**definition**: NA"},{"name":"**numerator**: Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits"},{"name":"**denominator**: N of families for whom weekly or biweekly visits are expected"}]},{"name":"#13: visit_schedule_alternate","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc."},{"name":"**denominator**: N of enrolled families"}]}]},{"name":"5","children":[{"name":"#14a: retention_month_03","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families who completed 3+ months of visits"},{"name":"**denominator**: N of families whose 1st HV was 3 to 6 months ago"}]},{"name":"#14b: retention_month_06","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families who completed 6+ months of visits"},{"name":"**denominator**: N of families whose 1st HV was 6 to 12 months ago"}]},{"name":"#14c: retention_month_12","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families whose 1st HV was 12+ months of visits"},{"name":"**denominator**: N of families whose 1st HV was 12 to 18 months ago"}]},{"name":"#14d: retention_month_18","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families whose 1st HV was 18+ months of visits"},{"name":"**denominator**: N of families whose 1st HV was 18 to 24 months ago"}]},{"name":"#17: disenrolled_addressable","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families who disenrolled for ‘addressable’ reasons"},{"name":"**denominator**: N of families who disenrolled from the home visiting program"}]},{"name":"#19: visit_successful","children":[{"name":"**definition**: NA"},{"name":"**numerator**: NA"},{"name":"**denominator**: NA"}]}]},{"name":"?","children":[{"name":"#18: inquire_development","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of visits that provider asked if parent has concerns about the development of child."},{"name":"**denominator**: N of visits w/ child 0+ days old"}]}]}]},"options":{"hierarchy":["driver_primary","title","key_value"],"input":null,"attribute":"leafCount","linkLength":100,"fontSize":10,"tooltip":false,"margin":{"top":20,"bottom":20,"left":30,"right":1080},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-e3971d0996a97a94e37b" style="width:1152px;height:384px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e3971d0996a97a94e37b">{"x":{"data":{"name":".","children":[{"name":"SMART Aim","children":[{"name":"#1: visits_all","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of enrolled families that received all of the expected home visits this month"},{"name":"**denominator**: N enrolled families not on creative outreach, alternate visit schedule or level X"}]}]},{"name":"3","children":[{"name":"#2: capacity_served","children":[{"name":"**definition**: NA"},{"name":"**numerator**: Current caseload"},{"name":"**denominator**: Expected service capacity"}]},{"name":"#3: capacity_filled","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families enrolled this month"},{"name":"**denominator**: Available service capacity at beginning of month"}]},{"name":"#4: referral_suitability","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of referrals received this month"},{"name":"**denominator**: available service capacity"}]},{"name":"#5: referral_contacted","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families referred this month that were contacted"},{"name":"**denominator**: N of families referred this month that attempted to contact"}]},{"name":"#6: referral_appropriateness","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of referrals this month that were appropriate"},{"name":"**denominator**: N of families referred this month that were contacted"}]},{"name":"#7a: contact_any","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families contacted that received any contact within 48 hours"},{"name":"**denominator**: N of families referred this month that were contacted"}]},{"name":"#7b: contact_face","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families contacted that received a first face-to-face contact"},{"name":"**denominator**: N of families referred this month that were contacted"}]},{"name":"#8: contact_lag","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families referred this month that were contacted and offered home visiting services"},{"name":"**denominator**: N of families referred this month that were contacted"}]},{"name":"#10: enrolled","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families referred this month that were offered home visiting services that enrolled in home visiting services"},{"name":"**denominator**: N of families referred this month with a completed referral"}]},{"name":"#11: enroll_lag","children":[{"name":"**definition**: Since there could be different valid definitions of “referral date”, this may need to be measures #11a, #11b, #11c …"},{"name":"**numerator**: NA"},{"name":"**denominator**: NA"}]}]},{"name":"4","children":[{"name":"#12: visit_drought","children":[{"name":"**definition**: NA"},{"name":"**numerator**: Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits"},{"name":"**denominator**: N of families for whom weekly or biweekly visits are expected"}]},{"name":"#13: visit_schedule_alternate","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families designated to get a number of home visits different from the number recommended by the model's typical visit schedule - including families on alternate visit schedule, inactive, etc."},{"name":"**denominator**: N of enrolled families"}]}]},{"name":"5","children":[{"name":"#14a: retention_month_03","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families who completed 3+ months of visits"},{"name":"**denominator**: N of families whose 1st HV was 3 to 6 months ago"}]},{"name":"#14b: retention_month_06","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families who completed 6+ months of visits"},{"name":"**denominator**: N of families whose 1st HV was 6 to 12 months ago"}]},{"name":"#14c: retention_month_12","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families whose 1st HV was 12+ months of visits"},{"name":"**denominator**: N of families whose 1st HV was 12 to 18 months ago"}]},{"name":"#14d: retention_month_18","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families whose 1st HV was 18+ months of visits"},{"name":"**denominator**: N of families whose 1st HV was 18 to 24 months ago"}]},{"name":"#17: disenrolled_addressable","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of families who disenrolled for ‘addressable’ reasons"},{"name":"**denominator**: N of families who disenrolled from the home visiting program"}]},{"name":"#19: visit_successful","children":[{"name":"**definition**: NA"},{"name":"**numerator**: NA"},{"name":"**denominator**: NA"}]}]},{"name":"?","children":[{"name":"#18: inquire_development","children":[{"name":"**definition**: NA"},{"name":"**numerator**: N of visits that provider asked if parent has concerns about the development of child."},{"name":"**denominator**: N of visits w/ child 0+ days old"}]}]}]},"options":{"hierarchy":["driver_primary","title","key_value"],"input":null,"attribute":"leafCount","linkLength":100,"fontSize":10,"tooltip":false,"margin":{"top":20,"bottom":20,"left":30,"right":1080},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+
+<!-- ## Static Tree -->
+<!-- ```{r tree-static, echo=echo_chunks, message=message_chunks} -->
+<!-- ``` -->
 
 
 # Session Information
@@ -584,7 +382,7 @@ Session info -------------------------------------------------------------------
  language en_US                       
  collate  en_US.UTF-8                 
  tz       America/Chicago             
- date     2017-07-17                  
+ date     2017-07-18                  
 ```
 
 ```
@@ -667,5 +465,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2017-07-17, 20:41 -0500 in 3 seconds.
+Report rendered by wibeasley at 2017-07-18, 09:34 -0500 in 3 seconds.
 

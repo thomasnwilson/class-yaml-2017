@@ -43,12 +43,6 @@ dt <- data.tree::as.Node(l)
 # ds <- data.tree:::ToDataFrameTable(dt, "measure_id", variables)
 ds <- data.tree:::ToDataFrameTypeCol(dt, variables)
 
-# ---- tree-static --------------------------------------------------------------
-data.tree:::print.Node(dt, limit=NULL)
-print(dt, "measure_id", "title", "description", "driver_primary", "numerator", "denominator", "definition", "note", "status", pruneMethod = "simple")
-
-# print(dt)
-
 # ---- list-static -------------------------------------------------------------
 display_attribute <- function( a, name, prefix=glue("* **{name}**: "), ending="\n") {
   if( !is.null(a[[name]]) ) {
@@ -165,6 +159,13 @@ ds_tree %>%
     c("driver_primary",  "title", "key_value"), #"parent_measure_id",
     linkLength = 100
   )
+
+
+# ---- tree-static --------------------------------------------------------------
+data.tree:::print.Node(dt, limit=NULL)
+print(dt, "measure_id", "title", "description", "driver_primary", "numerator", "denominator", "definition", "note", "status", pruneMethod = "simple")
+
+# print(dt)
 
 # ---- verify-values -----------------------------------------------------------
 # checkmate::assert_integer(ds$row_id           , lower=0  , any.missing=FALSE, unique=FALSE)
