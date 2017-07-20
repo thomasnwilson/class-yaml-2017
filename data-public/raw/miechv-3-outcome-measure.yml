@@ -4,7 +4,7 @@
   description: "% of families that received all of the expected home visits this month"
   driver_primary: SMART Aim
   numerator: N of enrolled families that received all of the expected home visits this month
-  denominator: N enrolled families not on creative outreach, alternate visit schedule or level X
+  denominator: N enrolled families not on creative outreach, alternate visit schedule or level X.  (Where 'enrolled' is defined as a completed visit in past 90 days.)
   status: planned
 -
   measure_id: 2
@@ -19,7 +19,7 @@
   title: capacity_filled
   description: "% of available capacity that was filled this month"
   driver_primary: 3
-  numerator: N of families enrolled this month
+  numerator: N of families newly enrolled this month
   denominator: Available service capacity at beginning of month
   status: planned
 -
@@ -57,9 +57,9 @@
 -
   measure_id: 7b
   title: contact_face
-  description: "% of referred families contacted who received a face-to-face contact"
+  description: "% of referred families contacted who received a face-to-face contact within 7 days"
   driver_primary: 3
-  numerator: N of families contacted that received a first face-to-face contact
+  numerator: N of families contacted that received a first face-to-face contact within 7 days
   denominator: N of families referred this month that were contacted
   status: planned
 -
@@ -72,10 +72,10 @@
   status: planned
 -
   measure_id: 10
-  title: enrolled
-  description: "% of families offered home visiting services that enrolled in home visiting services"
+  title: enroll_conversion
+  description: "% of families (with a completed referral) that enrolled in home visiting services"
   driver_primary: 3
-  numerator: N of families referred this month that were offered home visiting services that enrolled in home visiting services
+  numerator: N of families referred this month that had a completed visit within 90 days
   denominator: N of families referred this month with a completed referral
   status: planned
 -
