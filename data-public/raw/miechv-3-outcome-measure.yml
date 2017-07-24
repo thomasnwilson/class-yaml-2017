@@ -94,6 +94,7 @@
   numerator: Among families for whom weekly or biweekly visits are expected, N without 21+ days between visits
   denominator: N of families for whom weekly or biweekly visits are expected
   status: planned
+  notes: ?Will, can the 'weekly or biweekly' be removed?
 -
   measure_id: 13
   title: visit_schedule_alternate
